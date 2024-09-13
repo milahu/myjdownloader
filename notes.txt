@@ -1,0 +1,76 @@
+https://github.com/NixOS/nixpkgs/issues/41321
+Request for Package: 'jdownloader'
+
+https://github.com/NixOS/nixpkgs/pull/136998
+jdownloader2: init at 2.0
+
+https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=jdownloader2
+
+https://github.com/jlesage/docker-jdownloader-2
+
+https://github.com/flathub/org.jdownloader.JDownloader/issues/1
+Proprietary or open source?
+
+https://github.com/Col-E/Recaf/issues/405
+automatic patch generation, headless binary patching, scripting, automation
+
+https://github.com/containers/bubblewrap
+https://wiki.archlinux.org/title/Bubblewrap
+
+https://github.com/mirror/jdownloader
+https://github.com/mirror/jdownloader/issues/58
+This mirror-project is outdated - any way whoever maintains this could update it?
+https://github.com/mycodedoesnotcompile2/jdownloader_mirror
+https://github.com/mirror/jdownloader/issues/47
+Mirror all JDownloader repositories
+https://github.com/svn2github/MyJDownloaderClient
+https://github.com/milahu/jdownloader-browser
+
+https://github.com/coxifred/PimpMyJDownloader
+JDownloader private web server and chrome extension
+Copy jar (PimpMyJDownloader.jar) and put it into JDownloader extension directory.
+open a webserver to receive paste link from ChromeExtension
+no full remote control of JD?
+
+https://my.jdownloader.org/developers/
+My.JDownloader API Documentation
+Pro Tip: It's possible to access the JDownloader API directly (Bypass our server)
+by enabling the so called 'Deprecated API' in the Advanced Options.
+
+https://board.jdownloader.org/showthread.php?p=420311#post420311
+MyJDownloader and the browser extension provides so called direct connection mode.
+In this mode the traffic is direct between client and your JDownloader.
+Only session handling, event notification still happens through our server.
+
+https://board.jdownloader.org/showthread.php?t=67514
+My jdownloader own server
+You can create you own client applications and if you wish also your own server.
+Client is available as open source.
+Protocol/API is open source as well.
+Server is closed source, so you will have to develop it yourself.
+
+https://old.reddit.com/r/Piracy/comments/nytbxq/jdownloader_headless_selfhosted_webclient_that_is/
+JDownloader headless self-hosted web-client that is not MyJDownloader?
+I'd love to have a more autonomous, independent setup and replace MyJDownloader with some self-hosted solution.
+https://github.com/mayswind/AriaNg
+AriaNg, a modern web frontend making aria2 easier to use.
+
+https://dev.to/zodman/how-to-use-jdownloader-in-headless-mode-and-in-remote-server-3a8l
+https://my.jdownloader.org/
+
+https://board.jdownloader.org/showthread.php?t=82220
+Next CORE-Update supports solving CutCaptcha captchas via 2captcha.com.
+
+https://board.jdownloader.org/showthread.php?t=94447#post539396
+Changelog preview for upcoming CORE-update(s):
+New features:
+- Added CutCaptcha support via 2captcha.com solver (yes, it is working for file_crypt.cc
+
+https://support.jdownloader.org/en/knowledgebase/article/updates-update-behavior
+Updates to non-plugin components require a "Core update".
+When Core update is released, default behaviour is for the client to pre-download,
+and indicate via flashing update button that an update is available to install.
+If you don't use any of these notifications, update will install on exit/close of application.
+JDownloader restart is required for core components to become available.
+Core updates can at times take many days to weeks to be released publicly, due to development schedule and testing.
+We do not provide ETA for Core updates to be released, you will need to wait!

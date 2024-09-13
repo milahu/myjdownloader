@@ -1,0 +1,119 @@
+{
+  "LOCALE" : "EN",
+  "marketing" : {
+    "bigHeading": "Your Downloads From Anywhere",
+    "callToAction" : "REGISTER NOW",
+    "remoteTab" : "REMOTE",
+    "secureTab" : "SECURE",
+    "remoteDescription": "Remotely access your JDownloader. Use the <b>Web Interface, Android or Windows Phone Apps.</b> Check the download status, add links and solve captchas from everywhere!",
+    "secureDescription" : "All your traffic is secure and <b>encrypted</b>. We make sure that your <b>information is kept private</b>. No one except you is technically able to access information about your downloads.",
+    "dropDownCallToAction" : "<b>New to My JDownloader?</b><br/><a class='xbutton' href='login.html#register' onclick='jd.JDGearMenu.hide()'>Request access now</a>",
+    "dropDownCloseButton" : "Close"
+  },
+  "panels" : {
+    "general": {
+      "emailInputPlaceholder" : "Email",
+      "passwordInputPlaceholder" : "Password",
+      "setPasswordInputPlaceholder" : "Set Password",
+      "keyInputPlaceholder" : "Validation Key",
+      "captchaResponseInputPlaceholder" : "Captcha Response",
+      "reloadCaptchaButton" : "Reload captcha",
+      "backToLoginButton" : "Back to Login",
+      "forgotPasswordButton" : "I forgot my password",
+      "requestNewInviteButton" : "Request new invitation mail",
+      "logoutSuccessMessage" : "<b>Successfully logged out</b><br/>Have a good day and come back soon!",
+      "goToDashboardButton" : "Go to Dashboard"
+    },
+     "errors" : {
+      "hotmailErrorHeader": "Please use a different e-mail address",
+      "hotmailErrorBody": "E-mails that we send to hotmail, msn, live, outlook or microsoft addresses are unfortunately blocked by Microsoft and will not arrive. Sorry for the inconveniences.", 
+      "hotmailErrorForgotPasswordBody": "We are very sorry, but emails we send to hotmail, msn, live, outlook or microsoft addresses are blocked by Microsoft and do not arrive. Please create a new account with a different email address. Write a short note to support@jdownloader.org if you want us to delete your old account.",
+       "serverErrorHeading" : "Server Error",
+      "invalidInput" : "Invalid Input",
+       "warning": "Warning",
+      "termsNotAccepted" : "Terms not accepted",
+       "invalidEmail": "Invalid Email",
+       "invalidEmailHotmail": "Emails to Hotmail, Live, MSN or Outlook accounts are very often classified as spam. Please have a look in your spam folder if you can't find the mail!",
+      "invalidPassword" : "Invalid Password",
+      "emptyEmail" : "Empty Email",
+      "emptyPassword": "Password empty",
+      "emptyKey" : "Validation Key empty",
+      "expiredKey" : "Key expired",
+      "invalidKey" : "Validation Key invalid",
+      "emptyCaptcha" : "Captcha response empty",
+      "wrongCaptcha" : "Captcha Response wrong",
+      "captchaError" : "Captcha Error",
+      "emailAlreadyRegistered" : "Email already registered",
+      "emailUnknownHeader" : "Unknown Email",
+      "emailUnknown" : "Email is not registered",
+      "emailNotConfirmedHeader" : "Email is not yet confirmed",
+      "emailNotConfirmed" : "You already requested an invite, but did not confirm the Email.",
+      "emailExpiredHeader" : "Expired",
+      "emailExpired" : "Confirm Email expired.",
+      "overloadError" : "We are very sorry, but the server is busy. Try again later.",
+      "tooManyRequestsError" : "You reached the request limit.",
+      "wrongCredentialsHeader" : "Access denied",
+      "wrongCredentials" : "Username and/or password wrong",
+      "unknownError" : "Unknown Error",
+      "possibleReason" : "Possible Reason:"
+    },
+    "signIn" : {
+      "header" : "Sign In",
+      "sendButtonValue" : "Sign in",
+      "termsNotice" : "<b>Important notice</b><br/> By using this service you accept the <a href='/legal/terms.html#english' target='_blank'>Terms and Conditions</a>."
+    },
+    "register" : {
+      "header" : "Register Now",
+      "sendButtonValue" : "Register",
+      "acceptTermsButton" : " I accept the <a href='/legal/terms.html#english' target='_blank'>Terms and Conditions</a>"
+    },
+    "validateEmail" : {
+      "header" : "Set Password",
+      "sendButtonValue" : "Confirm",
+      "welcome" : "Welcome back",
+      "callToAction" : "Choose a password and you are done!",
+      "callToActionWithKey" : "Choose a password, enter your validation key (from the email) and you are done!"
+    },
+    "forgotPassword" : {
+      "header" : "Request pw reset",
+      "sendButtonValue" : "Request reset",
+      "notice" : "<b>Need a new password?</b><br/> Don't worry! Submit the form and an Email with information on how to reset your password will be send to you."
+    },
+    "changePassword" : {
+      "header" : "Change Password",
+      "newPasswordInputPlaceholder" : "Choose new password",
+      "submitButtonValue": "Change Password",
+      "welcome" : "Welcome back",
+      "callToAction" : "Choose a password and you are done!",
+      "callToActionWithKey" : "Choose a password, enter your validation key (from the email) and you are done!"
+    },
+    "cancelInvite" : {
+      "header" : "Cancel invite",
+      "sendButtonValue" : "Cancel invite",
+      "welcome" : "Welcome back",
+      "callToAction": "If you really want to cancel your registration, click the button below.",
+      "successMessageHeader" : "Cancel invite successful",
+      "successMessage" : "Changed your mind?",
+      "invalidEmailMessage" : "Your invite is already canceled or your Email never was invited.",
+      "cancelRequestInvalidHeader" : "Cancel request invalid",
+      "cancelRequestInvalid" : "The Cancel link is inavlid. Your inivte has not been canceled."
+    },
+    "finishTermination" : {
+      "header" : "Terminate account",
+      "sendButtonValue"  : "Terminate account",
+      "welcomeMessage" : "<b>Not satisfied with our service?</b><br/>Consider giving us feedback on why you want to quit your account instead of just leaving. We want to make the service as awesome as possible for you."
+    },
+    "alreadySignedIn" : {
+      "header" : "Already Signed In",
+      "welcomeMessage" : "You are not <b>__username__</b>?"
+    },
+    "emailSuccess" : {
+      "header": "Check Your Email Inbox",
+      "notice": "<b>Registration email sent</b><br/>Check your inbox for instructions. <font color='red'>Also check your spam folder.</font>"
+    },
+    "emailSuccessHotmail": {
+      "header": "Check Your Email Inbox",
+      "notice": "<b>Registration email sent</b><br/>Check your inbox for instructions.<br /><hr/><br /><h2 style='color:red; font-size: 2em'>Check your spam folder!</h2><div>Microsoft sometimes classifies our mails as spam. We work on it. Follow these steps to make sure you're able to receive mails from us in the future: <br/><br/><b>- Go to your junk emails folder</b> <br/><b>- Mark our mail as safe</b> <br/><b>- Add us to your contact list</b> </div>"
+    }
+  }
+}

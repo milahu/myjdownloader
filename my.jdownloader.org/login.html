@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description"
+        content="Remote access to your JDownloader with Web Interface, Android App, iPhone App and Browser Extensions.">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    <title>My JDownloader - Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.min.css" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=Lbbrj6RPKO">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=Lbbrj6RPKO">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=Lbbrj6RPKO" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=Lbbrj6RPKO" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=Lbbrj6RPKO" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=Lbbrj6RPKO" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=Lbbrj6RPKO">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=Lbbrj6RPKO" color="#22545c">
+    <link rel="shortcut icon" href="/favicon.ico?v=Lbbrj6RPKO">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+    <meta name="apple-mobile-web-app-title" content="MyJDownloader">
+    <meta name="application-name" content="MyJDownloader">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=Lbbrj6RPKO">
+    <meta name="theme-color" content="#22545c">
+    <!-- JS Lib -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>-->
+
+</head>
+
+<body id="loginContainer" class="unresolved">
+    <header class="navbarStatic">
+        <div class="wrap">
+            <a id="logo" href="login.html" title="JDownloader Website"></a>
+
+
+            <div id="languageselection">
+                <a onclick="jd.Historian.setParam('locale', 'en');">en</a>
+                <a onclick="jd.Historian.setParam('locale', 'de');">de</a>
+
+                <div style="width:50px"></div>
+            </div>
+            <nav id="mainnavContainer" class="invisibleOnMobile">
+                <ul>
+                    <li><a class="mainNavButton" href="http://beta.jdownloader.org/support">Support</a>
+                    </li>
+                    <li><a class="mainNavButton" href="http://beta.jdownloader.org/development">Open_Source();</a>
+                    </li>
+                    <li><a class="mainNavButton" href="http://beta.jdownloader.org/news">News</a>
+                    </li>
+                    <li><a class="mainNavButton current" href="http://my.jdownloader.org">&nbsp;&nbsp;My
+                            JD&nbsp;&nbsp;</a>
+                    </li>
+                    <li><a class="mainNavButton" href="http://beta.jdownloader.org/#features">Features</a>
+                    </li>
+                    <li><a class="mainNavButton" href="http://beta.jdownloader.org/">Download</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+            <div class="wrap invisibleOnMobile">
+                <div id="dropDownMenu"
+                    style="display: none; float: left; position: absolute; margin-top: -1px; top: 0px; left: 660px; z-index: 3; border-bottom-left-radius: 5px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; padding: 0px; width: 240px; background-image: none; background-color: rgb(198, 229, 231);">
+                    <a id="currentUserMenuEntry" class="dropDownButton"></a>
+
+                    <p id="notLoggedInMenuEntry" data-i18n="[html]marketing.dropDownCallToAction">
+                        <b>New to My JDownloader?</b><br />
+                        <a class="xbutton" onclick="jd.JDGearMenu.hide();jd.Historian.newItem('register');">Request
+                            access
+                            now</a>
+                    </p>
+
+                    <p class="dropDownMenuFooter">
+                        <a style="float: right;" onclick="jd.JDGearMenu.hide()"
+                            data-i18n="[html]marketing.dropDownCloseButton">Close</a>
+                        <br class="clearfix" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <div class="wrap bigHeadingContainer">
+            <h1 data-i18n="marketing.bigHeading" style="width: 100%; padding-left: 14px; letter-spacing: 4px;"></h1>
+
+            <div>
+                <a type="submit" class="xbutton"
+                    style="width: 300px; text-align: center; padding: 20px 20px 15px; font-size: 42px; margin-top: 22px; letter-spacing: 4px; margin-right: 5px; font-weight: bold;"
+                    onclick="jd.Historian.newItem('register')" data-i18n="marketing.callToAction">REGISTER NOW</a>
+            </div>
+            <div style="clear: both">
+            </div>
+        </div>
+        <div class="wrap loginContent">
+            <div class="featuresContainer">
+
+                <div class="tabContainer">
+                    <div><a class="secureLink rotatingItemsLink active" href="#" onclick="changeToTab('secure')">
+                            <h2 style="float:left;" data-i18n="marketing.secureTab">
+                                secure
+                            </h2>
+                        </a><span style="float:left;">&nbsp; &#8226; &nbsp;</span>
+                        <a class="remoteLink rotatingItemsLink" href="#" onclick="changeToTab('remote')">
+                            <h2 style="float:left;" data-i18n="marketing.remoteTab">remote</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="rotatingContentContainer">
+                    <img class="secureImage contentImage" src="images/secure slide.png" />
+                    <img class="remoteImage contentImage" src="images/remote slide normal.png" style="display:none;" />
+                    <div class="contentItem">
+                        <p class="secureDescription descriptionItem" data-i18n="[html]marketing.secureDescription">
+                            All your traffic is secure and <b>encrypted</b>. We make sure that
+                            your <b>information is kept private</b>. No one except you is
+                            technically able to access information about your downloads.
+                        </p>
+                        <p class="remoteDescription descriptionItem" style="display:none;"
+                            data-i18n="[html]marketing.remoteDescription">
+                            Remotely access your JDownloader. Use the <b>Web Interface, Android or Windows Phone
+                                Apps.</b>
+                            Check the
+                            download status, add links and solve captchas from everywhere!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="panelWrapper" class="contentItem loginFormPanel">
+                <div id="signinPanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.signIn.header">Sign in</h2>
+
+                        <form id="loginForm" method="post" autocomplete="on">
+                            <input id="usernameInput" name="username" type="text" placeholder="Email" tabindex="1"
+                                data-i18n="[placeholder]panels.general.emailInputPlaceholder" />
+                            <input id="passwordInput" name="password" type="password" placeholder="Password"
+                                tabindex="2" data-i18n="[placeholder]panels.general.passwordInputPlaceholder" />
+
+                            <div style="margin-top: 4px;">
+                                <input id="loginButton" type="submit" class="xbutton" tabindex="3"
+                                    style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;"
+                                    data-i18n="[value]panels.signIn.sendButtonValue" value="Sign in" />
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                        <div class="errorMessage">Error occured</div>
+                        <div class="successMessage" style="display: block; float: left"
+                            data-i18n="[html]panels.signIn.termsNotice">
+                            <b>Important notice</b><br />
+                            By using this service you accept the
+                            <a href="/legal/terms.html" target="_blank">Terms and Conditions</a>.
+                        </div>
+                        <a type="submit" class="xbutton visibleOnMobile" tabindex="4"
+                            style="float: left; width: 268px; text-align: center; padding: 16px; font-size: 24px; margin-top: 16px; letter-spacing: 2px; margin-right: 5px;"
+                            onclick="jd.Historian.newItem('register')">
+                            No account? Register
+                        </a>
+                    </div>
+                </div>
+                <div id="registerPanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.register.header">Register Now</h2>
+
+                        <div class="errorMessage"></div>
+                        <div class="successMessage"></div>
+                        <form id="registerForm" method="post">
+                            <input id="registerEmailInput" name="email" type="email" placeholder="Email" tabindex="1"
+                                data-i18n="[placeholder]panels.general.emailInputPlaceholder" />
+
+                            <div>
+                                <div style="text-align: center; margin-bottom: 12px;">
+                                    <img class="captchaImage"
+                                        style="padding: 5px 15px; background-color: white; width: 268px;" src="" />
+                                    <a style="cursor: pointer; font-size: 12px; text-decoration: underline;"
+                                        class="captchaReloadButton"
+                                        data-i18n="panels.general.reloadCaptchaButton">Reload
+                                        captcha</a>
+                                </div>
+                                <input class="captchaResponseInput" name="captcha" type="text"
+                                    placeholder="Captcha response" tabindex="2" autocomplete="off"
+                                    data-i18n="[placeholder]panels.general.captchaResponseInputPlaceholder" />
+                            </div>
+                            <p style="font-size: 12px;">
+                                <label>
+                                    <input id="termsCheckbox" type="checkbox" tabindex="3" />
+                                    <span data-i18n="[html]panels.register.acceptTermsButton">
+                                        I accept the <a href="/legal/terms.html" target="_blank">Terms and
+                                            Conditions</a>.
+                                    </span>
+                                </label>
+                            </p>
+
+                            <div style="margin-top: 4px;">
+                                <div>
+                                    <button id="registerButton" class="xbutton" tabindex="4"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;"
+                                        type="submit" data-i18n="panels.register.sendButtonValue">
+                                        Register
+                                    </button>
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a class="backToLoginAnchor" onclick="jd.Historian.newItem('login');return false;"
+                                        data-i18n="panels.general.backToLoginButton">Back to Login Page</a>
+                                </p>
+
+                                <div style="clear: both;"></div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div id="registerSuccess" class="formPanel">
+                    <h2 data-i18n="panels.emailSuccess.header">Check your email inbox (and spam folder!)</h2>
+
+                    <div style="text-align: center;">
+                        <img src="images/happybot.png" width="220px" />
+                    </div>
+                    <div data-i18n="[html]panels.emailSuccess.notice" class="successMessage" style="display: block;">
+                        <b>Registration Email sent</b><br />For instructions check
+                        your Inbox. <br />
+                        <font color="red" size="1.2em">Don't forget to check your spam folder!</font>
+                    </div>
+                </div>
+                <div id="registerSuccessHotmail" class="formPanel">
+                    <h2 data-i18n="panels.emailSuccessHotmail.header">Check your email inbox (and spam folder!)</h2>
+
+                    <div style="text-align: center;">
+                        <img src="images/happybot.png" width="220px" />
+                    </div>
+                    <div data-i18n="[html]panels.emailSuccessHotmail.notice" class="successMessage"
+                        style="display: block;">
+                        <b>Registration Email sent</b><br />For instructions check
+                        your Inbox.
+                    </div>
+                    <br /><br />
+                </div>
+                <div id="changePwRequestSuccess" class="formPanel">
+                    <h2 data-i18n="panels.emailSuccess.header">Check your Email Inbox</h2>
+
+                    <div style="text-align: center;">
+                        <img src="images/happybot.png" width="220px" />
+                    </div>
+                    <div class="successMessage" style="display: blocK;">
+                        <b>Change password Email sent</b><br />For instructions check
+                        your Inbox. <font color="red">Also check your spam folder.</font>
+                    </div>
+                </div>
+                <div id="forgotPasswordPanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.forgotPassword.header">Request pw reset</h2>
+                        <div class="errorMessage"></div>
+                        <form class="form" method="post">
+                            <input data-i18n="[placeholder]panels.general.emailInputPlaceholder" class="emailInput"
+                                   id="forgotPasswordEmailInput"
+                                name="email" type="email" placeholder="Email" tabindex="1" />
+
+                            <div>
+                                <div style="text-align: center; margin-bottom: 12px;"
+                                    onClick="$('.captchaResponseInput').focus()">
+                                    <img class="captchaImage"
+                                        style="padding: 5px 15px; background-color: white; width: 268px;" src="" />
+                                    <a data-i18n="panels.general.reloadCaptchaButton"
+                                        style="cursor: pointer; font-size: 12px; text-decoration: underline;"
+                                        class="captchaReloadButton">Reload captcha</a>
+                                </div>
+                                <input data-i18n="[placeholder]panels.general.captchaResponseInputPlaceholder"
+                                    class="captchaResponseInput" name="captcha" type="text"
+                                    placeholder="Captcha response" tabindex="2" />
+                            </div>
+                            <div style="margin-top: 4px;">
+                                <div>
+                                    <button class="xbutton submitButton" tabindex="3"
+                                            id="forgotPasswordSubmitButton"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;"
+                                        type="submit" data-i18n="panels.forgotPassword.sendButtonValue">Request reset
+                                    </button>
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a data-i18n="panels.general.backToLoginButton"
+                                        onclick="jd.Historian.newItem('login')">Back
+                                        to Login Page</a>
+                                </p>
+
+                                <div style="clear: both;"></div>
+                            </div>
+                        </form>
+                        <div class="successMessage"></div>
+                    </div>
+                </div>
+                <div id="requestTerminationPanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.finishTermination.header">Terminate account</h2>
+
+                        <form class="form" method="post">
+                            <input class="emailInput" data-i18n="[placeholder]panels.general.emailInputPlaceholder"
+                                name="email" type="email" placeholder="Email" tabindex="1" />
+                            <input class="passwordInput"
+                                data-i18n="[placeholder]panels.general.passwordInputPlaceholder" name="password"
+                                type="password" placeholder="Password" tabindex="2" />
+
+                            <div>
+                                <div style="text-align: center; margin-bottom: 12px;"
+                                    onClick="$('.captchaResponseInput').focus()">
+                                    <img class="captchaImage"
+                                        style="padding: 5px 15px; background-color: white; width: 268px;" src="" />
+                                    <a style="cursor: pointer; font-size: 12px; text-decoration: underline;"
+                                        class="captchaReloadButton" data-i18n="panels.general.reloadCaptchaButton">
+                                        Reload
+                                        captcha</a>
+                                </div>
+                                <input class="captchaResponseInput"
+                                    data-i18n="[placeholder]panels.general.captchaResponseInputPlaceholder"
+                                    name="captcha" type="text" placeholder="Captcha response" tabindex="3" />
+                            </div>
+                            <div style="margin-top: 4px;">
+                                <div>
+                                    <button class="xbutton submitButton"
+                                        data-i18n="panels.finishTermination.sendButtonValue" tabindex="4"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;"
+                                        type="submit">
+                                        Terminate account
+                                    </button>
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a data-i18n="panels.general.backToLoginButton"
+                                        onclick="window.location = 'login.html#login'">Back to Login Page</a>
+                                </p>
+
+                                <div style="clear: both;"></div>
+                            </div>
+                        </form>
+                        <div class="errorMessage"></div>
+                        <div class="successMessage"></div>
+                    </div>
+                </div>
+                <div id="alreadySignedInPanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.alreadySignedIn.header">Already Signed in</h2>
+                        <a class="xbutton" data-i18n="panels.general.goToDashboardButton"
+                            style="font-size: 26px; padding: 10px; width: 100%; text-align: center;"
+                            onclick="window.location = 'index.html?locale=' + jd.Historian.getParam('locale') + '#dashboard';">
+                            Go to Dashboard
+                        </a>
+
+                        <p id="logoutNotice"></p>
+                    </div>
+                </div>
+                <div id="oldBrowserPanel" class="formPanel">
+                    <div>
+                        <h1>Incompatible Browser</h1>
+
+                        <div class="errorMessage" style="display: block">
+                            <b>Your browser is not supported</b>
+                            <br />My JDownloader currently works with
+                            <a href="http://www.google.com/chrome">Google Chrome</a>,
+                            <a href="http://www.mozilla.org">Mozilla Firefox</a>
+                            and
+                            <a href="http://ie.microsoft.com/">Internet Explorer 10</a>.<br />
+                            <b>Upgrade your browser!</b>
+                        </div>
+                    </div>
+                </div>
+                <div id="validatePanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.validateEmail.header">Set password</h2>
+
+                        <form id="validationForm" method="post" autocomplete="off">
+                            <div id="validationWelcome" class="successMessage" style="margin-bottom: 14px;"></div>
+                            <input id="emailValidationInput" name="validationKey" type="text" placeholder="Email"
+                                data-i18n="[placeholder]panels.general.emailInputPlaceholder" tabindex="1"
+                                title="Email" />
+                            <input id="emailValidationKeyInput" name="validationKey" type="text"
+                                placeholder="Validation Key" data-i18n="[placeholder]panels.general.keyInputPlaceholder"
+                                tabindex="2" title="Validation Key" />
+                            <input id="emailConfirmPasswordInput" name="password" type="password"
+                                placeholder="Set Password"
+                                data-i18n="[placeholder]panels.general.setPasswordInputPlaceholder" tabindex="3"
+                                title="Password" />
+
+                            <div style="margin-top: 4px;">
+                                <div>
+                                    <button data-i18n="panels.validateEmail.sendButtonValue" type="submit"
+                                        id="confirmButton" class="xbutton" tabindex="4"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;">
+                                        Confirm
+                                    </button>
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a data-i18n="panels.general.backToLoginButton"
+                                        onclick="jd.Historian.newItem('login')">Back
+                                        to Login Page</a>
+                                </p>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                        <div class="errorMessage"></div>
+                        <div class="successMessage"></div>
+                    </div>
+                </div>
+                <div id="cancelPanel" class="formPanel">
+                    <div>
+                        <h2>Cancel invite</h2>
+
+                        <form id="cancelForm" data-i18n="panels.cancelInvite.header" method="post" autocomplete="off">
+                            <div style="margin-top: 4px;">
+                                <div id="cancelFormText"></div>
+                                <br />
+
+                                <div>
+                                    <button type="submit" id="cancelInviteButton"
+                                        data-i18n="panels.cancelInvite.sendButtonValue" class="xbutton" tabindex="1"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;">
+                                        Cancel invite
+                                    </button>
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a onclick="jd.Historian.newItem('login')"
+                                        data-i18n="panels.general.backToLoginButton">Back
+                                        to Login Page</a>
+                                </p>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                        <div class="errorMessage"></div>
+                        <div class="successMessage">
+                        </div>
+                    </div>
+                </div>
+                <div id="changepasswordPanel" class="formPanel">
+                    <div>
+                        <h2 data-i18n="panels.changePassword.header">Change Password</h2>
+
+                        <form class="form" method="post">
+                            <div id="changePasswordWelcome" class="successMessage" style="margin-bottom: 14px;"></div>
+                            <input id="changePasswordKeyInput" name="validationKey" type="text"
+                                placeholder="Validation Key" data-i18n="[placeholder]panels.general.keyInputPlaceholder"
+                                tabindex="1" title="Validation Key" /> <input id="changePasswordEmailInput"
+                                name="validationKey" type="text" placeholder="Email" tabindex="2" title="Email" />
+                            <input id="changePasswordNewPassInput" name="password" type="password"
+                                placeholder="Choose new Password"
+                                data-i18n="[placeholder]panels.changePassword.newPasswordInputPlaceholder" tabindex="2"
+                                title="New Password" />
+
+                            <div style="margin-top: 4px;">
+                                <div>
+                                    <button type="submit" data-i18n="panels.changePassword.submitButtonValue"
+                                        id="changePasswordConfirmButton" class="xbutton" tabindex="3"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;">
+                                        Change password
+                                    </button>
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a onclick="jd.Historian.newItem('login')"
+                                        data-i18n="panels.general.backToLoginButton">Back
+                                        to Login Page</a>
+                                </p>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                        <div class="errorMessage"></div>
+                        <div class="successMessage"></div>
+                    </div>
+                </div>
+
+                <div id="purchasePanel" class="formPanel">
+                    <div>
+                        <h2>Purchase Installer</h2>
+
+                        <p><b>JDownloader Installer</b></p>
+
+                        <form id="purchaseForm" method="post">
+                            <input id="purchaseEmailInput" name="email" type="email" placeholder="Email" tabindex="1"
+                                data-i18n="[placeholder]panels.general.emailInputPlaceholder" />
+
+                            <p style="font-size: 12px;">
+                                <label>
+                                    <input id="toggleInvoiceForm" type="checkbox" tabindex="3"
+                                        onchange="$('#invoiceInputs').toggle();" />
+                                    <span>
+                                        Ich benötige eine Rechnung.
+                                    </span>
+                                </label>
+                            </p>
+                            <section id="invoiceInputs">
+                                <h3>Invoice Data</h3>
+                                <input name="email" type="text" placeholder="Name" tabindex="1" />
+                                <input name="email" type="text" placeholder="Address" tabindex="1" />
+                                <input name="email" type="text" placeholder="Town" tabindex="1" />
+                                <input name="email" type="text" placeholder="Phone Number" tabindex="1" />
+                            </section>
+                            <div>
+                                <div style="text-align: center; margin-bottom: 12px;">
+                                    <img class="captchaImage"
+                                        style="padding: 5px 15px; background-color: white; width: 268px;" src="" />
+                                    <a style="cursor: pointer; font-size: 12px; text-decoration: underline;"
+                                        class="captchaReloadButton"
+                                        data-i18n="panels.general.reloadCaptchaButton">Reload
+                                        captcha</a>
+                                </div>
+                                <input class="captchaResponseInput" name="captcha" type="text"
+                                    placeholder="Captcha response" tabindex="2" autocomplete="off"
+                                    data-i18n="[placeholder]panels.general.captchaResponseInputPlaceholder" />
+                            </div>
+                            <p style="font-size: 12px;">
+                                <label>
+                                    <input id="purchaseTermsCheckbox" type="checkbox" tabindex="3" />
+                                    <span data-i18n="[html]panels.register.acceptTermsButton">
+                                        I accept the <a href="/legal/terms.html" target="_blank">Terms and
+                                            Conditions</a>.
+                                    </span>
+                                </label>
+                            </p>
+
+                            <div style="margin-top: 4px;">
+                                <div>
+                                    <!--<button id="purchaseButton" class="xbutton" tabindex="4"
+                                        style="float: left; width: 268px; text-align: center; padding: 10px; font-size: 24px;"
+                                        type="submit">
+                                    Continue at &nbsp;<img width="100px" src="/login/paypal.png"/>
+                                </button>-->
+                                </div>
+                                <p style="font-size: 12px; float: right; width: 120px;">
+                                    <a class="backToLoginAnchor" onclick="jd.Historian.newItem('login');return false;"
+                                        data-i18n="panels.general.backToLoginButton">Back to Login Page</a>
+                                </p>
+
+                                <div style="clear: both;"></div>
+                            </div>
+                        </form>
+                        <div class="errorMessage"></div>
+                        <div class="successMessage"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <noscript>
+                <div
+                    style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+                    Your web browser must have JavaScript enabled in order for this application to display correctly.
+                </div>
+            </noscript>
+        </div>
+        <br style="clear: both" />
+    </div>
+    <div style="clear:both"></div>
+    <footer>
+        <div class="wrap">
+            <nav>
+                <ul>
+                    <li><span>AppWork</span>
+                        <ul>
+                            <li>
+                                <a href="http://wemakeyourappwork.com/de/#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="http://wemakeyourappwork.com/de/#about">About us</a>
+                            </li>
+                            <li>
+                                <a href="http://wemakeyourappwork.com/de/#jobs">Jobs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>JDownloader</span>
+                        <ul>
+                            <li>
+                                <a href="http://jdownloader.org/impressum">Impressum</a>
+                            </li>
+                            <li>
+                                <a href="legal/terms.html">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="legal/privacy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Follow us</span>
+                        <ul class="social">
+                            <li>
+                                <span class="facebook"></span>
+                                <a href="//www.facebook.com/jdownloader">Facebook</a></li>
+                            <li>
+                                <span class="twitter"></span>
+                                <a href="//www.twitter.com/jdownloader">Twitter</a></li>
+                            <li>
+                                <span class="googleplus"></span>
+                                <a href="https://plus.google.com/103152842847117988112/">Google+</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <span id="copyright">AppWork GmbH Copyright 2011-2023. Alle Rechte vorbehalten.</span>
+        </div>
+    </footer>
+
+    <!-- Communication with My JD API -->
+    <script type="text/javascript" src="src/crypto-js/components/core-min.js"></script>
+    <script type="text/javascript" src="src/crypto-js/rollups/aes.js"></script>
+    <script type="text/javascript" src="src/crypto-js/rollups/hmac-sha256.js"></script>
+    <script src="bower_components/requirejs/require.js"></script>
+    <script type="text/javascript" src="bower_components/jsencrypt/bin/jsencrypt.js"></script>
+    <script src="jdapi/jdapi.min.js"></script>
+
+    <!-- I18n -->
+    <script src="bower_components/i18next/i18next.min.js"></script>
+
+    <script src="src/login.min.js?v6"></script>
+
+    <script>
+        require(["jdapi"], function (API) {
+            var onConnect = $.Deferred();
+            var api = new API({}, onConnect);
+            onConnect.always(function () {
+                // Always
+                jd.MyJDLandingPage.startUp(api, function () {
+                    $(window).trigger('hashchange');
+                    $('body').removeClass('unresolved');
+                });
+                jd.JDGearMenu.init(api.getCurrentUser());
+            }).done(function () {
+                // Connected
+            }).fail(function () {
+                // Not Connected
+            });
+        });
+
+        function startTabAutoSwitch() {
+            return setInterval(function () {
+                if (currentActiveItem === 'secure') {
+                    changeToTab('remote');
+                } else if (currentActiveItem === 'remote') {
+                    changeToTab('secure');
+                }
+            }, 6000);
+        }
+
+        var currentActiveItem = 'secure';
+        var tabSwitchIntervalHandle = startTabAutoSwitch();
+
+        function changeToTab(target) {
+            clearInterval(tabSwitchIntervalHandle);
+            tabSwitchIntervalHandle = startTabAutoSwitch();
+            if (currentActiveItem === target) return;
+            $('.' + currentActiveItem + 'Image').fadeOut(200, function () {
+                $('.' + target + 'Image').fadeIn(200);
+            });
+
+            $('.' + currentActiveItem + 'Description').fadeOut(200, function () {
+                $('.' + target + 'Description').fadeIn(200);
+            });
+
+            $('.' + target + 'Link').addClass("active");
+            $('.' + currentActiveItem + 'Link').removeClass("active");
+            currentActiveItem = target;
+        };
+
+        window.changeToTab = changeToTab;
+    </script>
+</body>
+
+</html>

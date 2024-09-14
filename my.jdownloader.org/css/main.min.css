@@ -267,7 +267,7 @@ textarea:invalid {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   padding: 3px 7px;
   font-size: 1.2em;
 }
@@ -296,7 +296,7 @@ textarea:invalid {
   background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
   background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
   -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
 }
 .xbutton:active {
@@ -316,7 +316,7 @@ textarea:invalid {
   background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
   background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
   -pie-background: linear-gradient(#ecaf09, #efc91a);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 .chromeframe {
   margin: 0.2em 0;
@@ -359,7 +359,7 @@ h5 {
   letter-spacing: inherit;
 }
 .pie {
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 body {
   text-shadow: 0 1px 0 #daf9fa;
@@ -395,7 +395,7 @@ hr {
   border: 1px solid #75aaaa;
   color: #484848;
   box-shadow: 0 1px 1px #dbf4f5;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 .yellow {
   color: #e6b002;
@@ -444,7 +444,7 @@ hr {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 ._button,
 ._button:active,
@@ -468,7 +468,7 @@ hr {
   background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
   background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
   -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
 }
 ._button:active {
@@ -488,7 +488,7 @@ hr {
   background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
   background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
   -pie-background: linear-gradient(#ecaf09, #efc91a);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 .inlinebutton {
   display: inline-block;
@@ -521,7 +521,7 @@ hr {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   padding: 3px 7px;
 }
 .inlinebutton,
@@ -546,7 +546,7 @@ hr {
   background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
   background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
   -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
 }
 .inlinebutton:active {
@@ -566,7 +566,7 @@ hr {
   background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
   background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
   -pie-background: linear-gradient(#ecaf09, #efc91a);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 .wrap {
   width: 940px;
@@ -1363,7 +1363,7 @@ footer {
   border: 1px solid #75aaaa;
   color: #484848;
   box-shadow: 0 1px 1px #dbf4f5;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 #pastebin #submitpost input {
   width: 300px;
@@ -1398,7 +1398,7 @@ footer {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   text-align: center;
   font-size: 1.2em;
   line-height: 37px;
@@ -1427,7 +1427,7 @@ footer {
   background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
   background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
   -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
 }
 #pastebin #submitpost input:active {
@@ -1447,7 +1447,7 @@ footer {
   background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
   background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
   -pie-background: linear-gradient(#ecaf09, #efc91a);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 #support #main {
   padding-bottom: 80px;
@@ -1829,7 +1829,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
   border: 1px solid #75aaaa;
   color: #484848;
   box-shadow: 0 1px 1px #dbf4f5;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 #dropDownMenuButton.current {
   background-color: #193d43;
@@ -1841,7 +1841,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 }
 #dropDownMenu {
   font-size: 13px !important;
-  background-image: url(/images/content_bg_hover.png);
+  background-image: url(../images/content_bg_hover.png);
   border: 1px solid #22545c;
   border-radius: 4px;
   padding: 6px 0;
@@ -1865,7 +1865,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 .dropDownButton:hover {
   color: #fff;
   cursor: pointer;
-  background-image: url(/images/menu_bg.png);
+  background-image: url(../images/menu_bg.png);
 }
 #dropDownMenu hr {
   margin: 0;
@@ -2141,7 +2141,7 @@ select[disabled] {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   text-align: center;
   padding: 7px 7px 3px;
   font-size: 1.3em !important;
@@ -2348,7 +2348,7 @@ progress[aria-valuenow]:before {
 }
 .contextMenu {
   font-size: 13px !important;
-  background-image: url(/images/content_bg_hover.png);
+  background-image: url(../images/content_bg_hover.png);
   border: 1px solid #22545c;
   border-radius: 4px;
   padding: 6px 0;
@@ -3291,7 +3291,7 @@ header nav li a.mainNavButton:visited.current {
   color: #18383f;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background: url(/images/content_bg_hover.png) #d6f8f7;
+  background: url(../images/content_bg_hover.png) #d6f8f7;
   text-shadow: #fff 0 1px 0;
   box-shadow: -1px 0 1px #296570 inset, 1px 0 1px #296570 inset;
 }
@@ -3316,7 +3316,7 @@ header nav li a.mainNavButton:visited.current {
   box-shadow: 0 3px 2px -2px gray;
 }
 .listHeadingWrapper {
-  background-image: url(/images/content_bg_hover.png);
+  background-image: url(../images/content_bg_hover.png);
   margin-left: -2px;
   margin-top: -16px;
   z-index: 1;
@@ -3337,7 +3337,7 @@ header nav li a.mainNavButton:visited.current {
   padding: 8px 8px 8px 14px;
 }
 .directConnectionPopup .wrapper {
-  background-image: url(/images/content_bg_hover.png);
+  background-image: url(../images/content_bg_hover.png);
   border: 1px solid #22545c;
   border-radius: 4px;
   padding: 8px 12px;
@@ -3564,7 +3564,7 @@ div#gwtUnreadCountWrapper {
   color: #18383f;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background: url(/images/content_bg_hover.png) #d6f8f7;
+  background: url(../images/content_bg_hover.png) #d6f8f7;
   text-shadow: #fff 0 1px 0;
   box-shadow: -1px 0 1px #296570 inset, 1px 0 1px #296570 inset;
 }
@@ -3592,7 +3592,7 @@ div#gwtUnreadCountWrapper {
   border: 1px solid #75aaaa;
   color: #484848;
   box-shadow: 0 1px 1px #dbf4f5;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 #loginContainer #login .loginbutton {
   width: 40%;
@@ -3628,7 +3628,7 @@ div#gwtUnreadCountWrapper {
   -ms-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   text-align: center;
   font-size: 14px;
   line-height: 22px;
@@ -3657,7 +3657,7 @@ div#gwtUnreadCountWrapper {
   background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
   background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
   -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
   box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
 }
 #loginContainer #login .loginbutton:active {
@@ -3677,7 +3677,7 @@ div#gwtUnreadCountWrapper {
   background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
   background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
   -pie-background: linear-gradient(#ecaf09, #efc91a);
-  behavior: url(/css/PIE.htc);
+  behavior: url(../css/PIE.htc);
 }
 #loginContainer #login label {
   float: left;

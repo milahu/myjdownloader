@@ -1,0 +1,117 @@
+{
+  "LOCALE" : "DE",
+  "marketing" : {
+    "bigHeading": "Deine Downloads von überall",
+    "callToAction" : "REGISTRIEREN",
+    "remoteTab" : "ÜBERALL",
+    "secureTab" : "SICHER",
+    "remoteDescription": "Greife von überall auf deinen JDownloader zu. Benutze das <b>Web Interface, die Android oder Windows Phone App.</b> Überprüfe den Download Status, füge Links hinzu und löse Captchas, egal wo du bist!",
+    "secureDescription" : "Die übertragenen Daten sind sicher und <b>verschlüsselt</b>. Wir stellen sicher, dass <b>deine Informationen privat bleiben</b>. Niemand außer dir ist technisch dazu in der Lage Informationen über deine Downloads zu bekommen.",
+    "dropDownCallToAction" : "<b>Neu bei My JDownloader?</b><br/><a class='xbutton' onclick=\"jd.JDGearMenu.hide();jd.Historian.newItem('register');\">Jetzt anmelden</a>",
+    "dropDownCloseButton" : "Schließen"
+    },
+   "panels" : {
+     "general": {
+       "emailInputPlaceholder" : "Email",
+       "passwordInputPlaceholder" : "Passwort",
+       "setPasswordInputPlaceholder" : "Setze Passwort",
+       "keyInputPlaceholder" : "Validierungs Key",
+       "captchaResponseInputPlaceholder" : "Captcha Lösung",
+       "reloadCaptchaButton" : "Captcha neu laden",
+       "backToLoginButton" : "Zurück zum Login",
+       "forgotPasswordButton" : "Passwort vergessen",
+       "requestNewInviteButton" : "Einladung erneut anfordern",
+       "logoutSuccessMessage" : "<b>Erfolgreich ausgeloggt</b><br/>Noch einen schönen Tag und auf baldiges Wiedersehen!",
+       "goToDashboardButton" : "Zum Dashboard"
+     },
+     "errors" : {
+      "hotmailErrorHeader": "Bitte verwende eine andere E-Mail Adresse",
+      "hotmailErrorBody": "E-Mails die wir an hotmail, msn, live, outlook oder microsoft Adressen versenden werden von Microsoft leider blockiert und kommen nicht an.", 
+      "hotmailErrorForgotPasswordBody": "Es tut uns sehr leid, aber E-Mails die wir an hotmail, msn, live, outlook oder microsoft Adressen versenden werden von Microsoft blockiert und kommen nicht an. Bitte erstelle einen neuen Account mit einer anderen E-Mail Adresse. Schreibe uns eine Nachricht an support@jdownloader.org falls wir deinen alten Account löschen sollen.",
+       "serverErrorHeading" : "Server Fehler",
+      "invalidInput" : "Ungültige Eingaben",
+       "warning": "Warnung",
+      "termsNotAccepted" : "Bedingungen nicht akzeptiert",
+      "invalidEmail" : "Ungültige Email",
+       "invalidEmailHotmail": "E-Mails an Hotmail, Live, MSN oder Outlook Accounts landen sehr oft im Spam-Ordner, bitte sieh dort nach falls die E-Mail nicht ankommt!",
+      "invalidPassword" : "Ungültiges Passwort",
+      "emptyEmail" : "Email leer",
+      "emptyPassword": "Passwort leer",
+      "emptyKey" : "Validierungs Key leer",
+      "expiredKey" : "Validierungs Key abgelaufen",
+      "invalidKey" : "Validation Key ungültig",
+      "emptyCaptcha" : "Captcha Lösung leer",
+      "wrongCaptcha" : "Captcha Lösung falsch",
+      "captchaError" : "Captcha Fehler",
+      "emailAlreadyRegistered" : "Email bereits registriert",
+      "emailUnknownHeader" : "Unbekannte Email",
+      "emailUnknown" : "Email ist nocht nicht registriert",
+      "emailNotConfirmedHeader" : "Email Adresse ist noch nicht bestätigt",
+      "emailNotConfirmed" : "Du hast dich bereits registriert, aber deine Email noch nicht bestätigt.",
+      "overloadError" : "Es tut uns leid, aber der Server ist zur Zeit ausgelastet. Versuchen Sie es später nochmal!",
+      "tooManyRequestsError" : "Sie haben das request limit erreicht.",
+      "wrongCredentialsHeader" : "Zugang verweigert",
+      "wrongCredentials" : "Überprüfe deine Email und das Passwort",
+      "unknownError" : "Unbekannter Fehler",
+      "possibleReason" : "Mögliche Ursachen:"
+     },
+     "signIn" : {
+      "header" : "Anmelden",
+      "sendButtonValue" : "Anmelden",
+      "termsNotice" : "<b>Wichtiger Hinweis</b><br/>Durch Benutzung dieses Dienstes akzeptieren Sie die <a href='/legal/terms.html#deutsch' target='_blank'>Allgemeinen Geschäftsbedingungen</a>."
+     },
+     "register" : {
+      "header" : "Registrieren",
+      "sendButtonValue" : "Registrieren",
+      "acceptTermsButton" : "Ich akzeptiere die <a href='/legal/terms.html#deutsch' target='_blank'>AGB Bedingungen</a>"
+     },
+    "validateEmail" : {
+      "header" : "Passwort setzen",
+      "sendButtonValue" : "Bestätigen",
+      "welcome" : "Willkommen zurück",
+      "callToAction" : "Setze ein Passwort und du bist fertig!",
+      "callToActionWithKey" : "Setze ein Passwort, gib den Validation Key ein (aus der Email) und du bist fertig!"
+    },
+    "forgotPassword" : {
+       "header" : "PW zurücksetzen",
+       "sendButtonValue" : "Zurücksetzen anfordern",
+       "notice" : "<b>Passwort vergessen?</b><br/> Keine Angst! Sende das obige Formular ab und wir schicken dir eine Anleitung zum zurücksetzen des Passworts per Email"
+     },
+     "changePassword" : {
+       "header" : "Passwort ändern",
+       "newPasswordInputPlaceholder" : "Neues Passwort",
+       "submitButtonValue": "Passwort ändern",
+       "welcome" : "Willkommen zurück",
+       "callToAction" : "Setze ein neues Passwort und du bist fertig!",
+       "callToActionWithKey" : "Setze ein neues Passwort, gib den Validation Key ein (aus der Email) und du bist fertig!"
+     },
+      "cancelInvite" : {
+       "header" : "Registrierung abbrechen",
+       "sendButtonValue" : "Registrierung abbrechen",
+       "welcome" : "Willkommen zurück",
+       "callToAction": "Wenn du wirklich deine Registrierung abbrechen willst, klicke den Button unten.",
+       "successMessageHeader" : "Registrierung erfolgreich abgebrochen",
+       "successMessage" : "Du willst dich jetzt doch registrieren?",
+       "invalidEmailMessage" : "Deine Registrierung ist bereits abgebrochen oder deine Email war nie registriert",
+       "cancelRequestInvalidHeader" : "Abbruch fehlgeschlagen",
+       "cancelRequestInvalid" : "Der Abbruch Link war ungültig. Die Registrierung wurde nicht abgebrochen."
+     },
+     "finishTermination" : {
+      "header" : "Konto löschen",
+      "sendButtonValue"  : "Konto löschen",
+      "welcomeMessage" : "<b>Du bist mit unserem Dienst nicht zufrieden?</b><br/>Wenn du willst kannst du uns Feedback geben, anstatt einfach zu gehen. Wir wollen den Dienst so cool es geht gestalten."
+     },
+     "alreadySignedIn" : {
+      "header" : "Bereits eingeloggt",
+      "welcomeMessage" : "Du bist nicht <b>__username__</b>?"
+     },
+     "emailSuccess" : {
+       "header" : "Du hast eine Email",
+       "notice" : "<b>Email Einladung verschickt</b><br/>Für weiteres schau in deinen Posteingang. <font color='red'>Checke auch dein Spam Verzeichnis!</font>"
+     },
+     "emailSuccessHotmail": {
+       "header": "Du hast eine Email",
+       "notice": "<b>Email Einladung verschickt</b><br/>Schau in deinen Posteingang.<br /><hr/><br /><h2 style='color:red; font-size: 2em'>Check den Spam Ordner!</h2><div>Microsoft klassifiziert unsere Mails manchmal als Spam. Wir arbeiten dran. Um unsere Mails sicher zu erhalten kannst du Folgendes tun: <br/><br/><b>- Gehe in deinen Junk Mail Ordner</b> <br/><b>- Markiere unsere E-Mail als sicher</b> <br/><b>- Füge uns zu deiner Kontakt-Liste hinzu</b> </div>"
+     }
+   }
+}

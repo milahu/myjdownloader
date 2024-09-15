@@ -232,9 +232,23 @@ function myjdownloader() {
       });
     };
     v(pb, qb);
+    // load the xxx.cache.js file with <script src="xxx.cache.js"></script>
+    console.log("myjdownloader.nocache.js loading", k); // debug
     var n = t.createElement(nb);
     n.src = k;
-    t.getElementsByTagName(rb)[0].appendChild(n);
+    if (0) {
+      // this only works with packed xxx.cache.js files
+      // "packed" = eval via myjdownloader.onScriptDownloaded(["CODE"])
+      // unpacked xxx.cache.js files give error:
+      // TypeError: (Idi[b] , a).getCurrentUser is not a function
+      t.getElementsByTagName(rb)[0].appendChild(n);
+    } else {
+      // e.appendChild(g);
+      // e.removeChild(g);
+      var e = F();
+      e.appendChild(n);
+      e.removeChild(n);
+    }
   }
   myjdownloader.__startLoadingFragment = function (a) {
     return K(a);

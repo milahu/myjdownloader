@@ -10,19 +10,32 @@ set -eux
 #tool=wakaru # broken?
 tool=webcrack
 
+do_repack=false
+
 for f in my.jdownloader.org/myjdownloader/*.cache.js; do
 
   echo "$f"
 
+  if ! head -c 1000 "$f" | grep -q -F "myjdownloader.onScriptDownloaded"; then
+    echo "not packed"
+    continue
+  fi
+
   unpacked="$f.unpacked.js"
   echo "  $unpacked"
-  if ! [ -e "$unpacked" ]; then
+  #if ! [ -e "$unpacked" ]; then
+  if true; then
     node -e '
       const f = "./'"$f"'";
       const o = f + ".unpacked.js";
       const fs = require("fs");
       const myjdownloader = {
-        onScriptDownloaded: (strings) => fs.writeFileSync(o, strings.join("")),
+        //onScriptDownloaded: (strings) => fs.writeFileSync(o, strings.join("")),
+        onScriptDownloaded: (strings) => fs.writeFileSync(o, strings.map((s, i) => `\n// code block ${i}\n` + s + "\n\n\n").join("")),
+        // wrap each string into a code block "{ ... }"
+        // to emulate loading each string into a separate <script> element
+        // the xxx.cache.js files are loaded by my.jdownloader.org/myjdownloader/myjdownloader.nocache.js
+        //onScriptDownloaded: (strings) => fs.writeFileSync(o, strings.map((s, i) => `\n// code block ${i}\n{\n` + s + "\n}\n\n\n").join("")),
       };
       require(f);
       console.log("done", o);
@@ -49,6 +62,13 @@ for f in my.jdownloader.org/myjdownloader/*.cache.js; do
     echo "error: unknown tool ${tool@Q}"
     exit 1
   fi
+
+  if ! $do_repack; then
+
+    # dont repack code
+    mv "$out_tool" "$f"
+
+  else
 
   # repack code to myjdownloader.onScriptDownloaded(["CODE"])
   node -e '
@@ -84,5 +104,7 @@ for f in my.jdownloader.org/myjdownloader/*.cache.js; do
     fs.writeFileSync(o, code);
     console.log("done", o);
   '
+
+  fi
 
 done

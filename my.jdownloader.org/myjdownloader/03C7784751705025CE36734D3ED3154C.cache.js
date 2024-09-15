@@ -1,6 +1,5 @@
-// locale=en
-myjdownloader.onScriptDownloaded([
-`var $wnd = $wnd || window.parent;
+// code block 0
+var $wnd = $wnd || window.parent;
 var __gwtModuleFunction = $wnd.myjdownloader;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats("moduleStartup", "moduleEvalStart");
@@ -933,7 +932,9 @@ function JY(a, b) {
 function Pw(a, b) {
   var c;
   Gdi[c = ++Hdi] = Pw;
-  if (b[0] == "/") { b = "." + b; }
+  if (b[0] == "/") {
+    b = "." + b;
+  }
   //console.log("Pw: img.src =", b); // debug
   //console.log("Pw: img =", (Idi[c] = ymi + Aki, a)); // debug
   (Idi[c] = ymi + Aki, a).src = b;
@@ -4767,7 +4768,7 @@ function WW(a) {
 function Wv(b, a) {
   var c;
   Gdi[c = ++Hdi] = Wv;
-  a = a.replace(/src='\\/images\\//g, "src='./images/");
+  a = a.replace(/src='\/images\//g, "src='./images/");
   //console.log("Wv: a =", a); // debug
   //console.log("Wv: Ngi =", Ngi); // debug
   //console.log("Wv: elem =", (Idi[c] = Cmi + Xmi, b)); // debug
@@ -17652,7 +17653,7 @@ function WP(a) {
   return d;
 }
 function SP(a) {
-  var b = /\\+/g;
+  var b = /\+/g;
   var c;
   var d;
   Gdi[c = ++Hdi] = SP;
@@ -19911,7 +19912,7 @@ function zQ() {
   86400000;
   ari;
   bri;
-  " \\t\\r\\n";
+  " \t\r\n";
   "GMT";
   cri;
   60;
@@ -21570,7 +21571,7 @@ function Fm(a) {
   Gdi[b = ++Hdi] = Fm;
   Idi[b] = thi + Cei;
   ym();
-  c = !/[^,:{}\\[\\]0-9.\\-+Eaeflnr-u \\n\\r\\t]/.test((Idi[b] = thi + Vhi, a).replace(/"(\\\\.|[^"\\\\])*"/g, Ngi));
+  c = !/[^,:{}\[\]0-9.\-+Eaeflnr-u \n\r\t]/.test((Idi[b] = thi + Vhi, a).replace(/"(\\.|[^"\\])*"/g, Ngi));
   Hdi = b - 1;
   return c;
 }
@@ -21820,7 +21821,7 @@ function kJb(a) {
   Gdi[b = ++Hdi] = kJb;
   a = hMc((Idi[b] = dxi + Zei, a), gxi, hxi);
   a = hMc((Idi[b] = dxi + $ei, a), qvi, ixi);
-  a = hMc((Idi[b] = dxi + jhi, a), "\\t", jxi);
+  a = hMc((Idi[b] = dxi + jhi, a), "\t", jxi);
   Idi[b] = dxi + khi;
   c = a;
   Hdi = b - 1;
@@ -24167,7 +24168,7 @@ function r9c(a) {
   Idi[b] = Dxi + UFi;
   m9c();
   if (lLb((Idi[b] = Dxi + WDi, l9c), (Idi[b] = Ywi + yfi, M$c(), Idi[b] = Dxi + WDi, H$c))) {
-    mLb((Idi[b] = Dxi + uhi, l9c), (Idi[b] = Ywi + yfi, M$c(), Idi[b] = Dxi + uhi, H$c), xvi + n9c() + hhi + "\\n[INFO]    " + a);
+    mLb((Idi[b] = Dxi + uhi, l9c), (Idi[b] = Ywi + yfi, M$c(), Idi[b] = Dxi + uhi, H$c), xvi + n9c() + hhi + "\n[INFO]    " + a);
   }
   Hdi = b - 1;
 }
@@ -24177,7 +24178,7 @@ function o9c(a) {
   Idi[b] = Dxi + whi;
   m9c();
   if (lLb((Idi[b] = Dxi + sgi, l9c), (Idi[b] = Ywi + Jfi, M$c(), Idi[b] = Dxi + sgi, J$c))) {
-    mLb((Idi[b] = Dxi + Mdi, l9c), (Idi[b] = Ywi + Jfi, M$c(), Idi[b] = Dxi + Mdi, J$c), xvi + n9c() + hhi + "\\n[ERROR]    " + a);
+    mLb((Idi[b] = Dxi + Mdi, l9c), (Idi[b] = Ywi + Jfi, M$c(), Idi[b] = Dxi + Mdi, J$c), xvi + n9c() + hhi + "\n[ERROR]    " + a);
   }
   Hdi = b - 1;
 }
@@ -24187,7 +24188,7 @@ function w9c(a) {
   Idi[b] = Dxi + Rdi;
   m9c();
   if (lLb((Idi[b] = Dxi + Ffi, l9c), (Idi[b] = Ywi + Rei, M$c(), Idi[b] = Dxi + Ffi, K$c))) {
-    mLb((Idi[b] = Dxi + Qei, l9c), (Idi[b] = Ywi + Rei, M$c(), Idi[b] = Dxi + Qei, K$c), xvi + n9c() + hhi + "\\n[WARN]    " + a);
+    mLb((Idi[b] = Dxi + Qei, l9c), (Idi[b] = Ywi + Rei, M$c(), Idi[b] = Dxi + Qei, K$c), xvi + n9c() + hhi + "\n[WARN]    " + a);
   }
   Hdi = b - 1;
 }
@@ -24598,7 +24599,7 @@ function Zac() {
 function Asc(a, b) {
   var c;
   Gdi[c = ++Hdi] = Asc;
-  (Idi[c] = RDi + yki, $wnd).alert("ERROR: Possible problem with your *.gwt.xml module file.\\nThe compile time user.agent value (" + b + ") does not match the runtime user.agent value (" + a + "). Expect more errors.\\n");
+  (Idi[c] = RDi + yki, $wnd).alert("ERROR: Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (" + b + ") does not match the runtime user.agent value (" + a + "). Expect more errors.\n");
   Hdi = c - 1;
 }
 function ko(a, b, c) {
@@ -24999,8 +25000,8 @@ function pMc(c) {
     Hdi = d - 1;
     return e;
   }
-  var a = (Idi[d] = uEi + JCi, c).replace(/^(\\s*)/, Ngi);
-  var b = (Idi[d] = uEi + mCi, a).replace(/\\s*$/, Ngi);
+  var a = (Idi[d] = uEi + JCi, c).replace(/^(\s*)/, Ngi);
+  var b = (Idi[d] = uEi + mCi, a).replace(/\s*$/, Ngi);
   Idi[d] = uEi + gzi;
   e = b;
   Hdi = d - 1;
@@ -26571,7 +26572,7 @@ function HPb(a) {
   if (eZ((Idi[b] = _xi + Kdi, a).b)) {
     (Idi[b] = _xi + mgi, a).b = Kl(Sy($y(), a.a));
     if (eZ((Idi[b] = _xi + Dfi, a).b)) {
-      throw new (Idi[b] = _xi + Xei, vk)("Cannot find element with id \\"" + a.a + "\\". Perhaps it is not attached to the document body.");
+      throw new (Idi[b] = _xi + Xei, vk)("Cannot find element with id \"" + a.a + "\". Perhaps it is not attached to the document body.");
     }
     Qv((Idi[b] = _xi + wfi, a).b, ayi);
   }
@@ -26643,7 +26644,7 @@ function Am(d) {
   Gdi[f = ++Hdi] = Am;
   Idi[f] = thi + Ffi;
   ym();
-  var e = (Idi[f] = thi + Qei, d).replace(/[\\xad\\u0600-\\u0603\\u06dd\\u070f\\u17b4\\u17b5\\u200b-\\u200f\\u2028-\\u202e\\u2060-\\u2064\\u206a-\\u206f\\ufeff\\ufff9-\\ufffb]/g, function (a) {
+  var e = (Idi[f] = thi + Qei, d).replace(/[\xad\u0600-\u0603\u06dd\u070f\u17b4\u17b5\u200b-\u200f\u2028-\u202e\u2060-\u2064\u206a-\u206f\ufeff\ufff9-\ufffb]/g, function (a) {
     var b;
     var c;
     Gdi[b = ++Hdi] = null;
@@ -26899,7 +26900,7 @@ function ek(a, b) {
     f = d.length;
     for (; (Idi[i] = Kfi + $fi, e) < f; Idi[i] = Kfi + $fi, ++e) {
       c = d[e];
-      (Idi[i] = Kfi + _fi, b).Yg("\\tat " + c);
+      (Idi[i] = Kfi + _fi, b).Yg("\tat " + c);
     }
   }
   Hdi = i - 1;
@@ -26961,7 +26962,7 @@ function Bm(d) {
   Gdi[f = ++Hdi] = Bm;
   Idi[f] = thi + Rei;
   ym();
-  var e = (Idi[f] = thi + Sei, d).replace(/[\\x00-\\x1f\\xad\\u0600-\\u0603\\u06dd\\u070f\\u17b4\\u17b5\\u200b-\\u200f\\u2028-\\u202e\\u2060-\\u2064\\u206a-\\u206f\\ufeff\\ufff9-\\ufffb"\\\\]/g, function (a) {
+  var e = (Idi[f] = thi + Sei, d).replace(/[\x00-\x1f\xad\u0600-\u0603\u06dd\u070f\u17b4\u17b5\u200b-\u200f\u2028-\u202e\u2060-\u2064\u206a-\u206f\ufeff\ufff9-\ufffb"\\]/g, function (a) {
     var b;
     var c;
     Gdi[b = ++Hdi] = null;
@@ -29655,7 +29656,7 @@ function zV() {
   pV = CLb(xvi + (Idi[a] = Vqi + mgi, vV) + hhi);
   CLb(xvi + (Idi[a] = Vqi + mfi, wV) + hhi);
   Idi[a] = Vqi + hfi;
-  qV = CLb("\\\\d");
+  qV = CLb("\\d");
   Idi[a] = Vqi + Cei;
   Idi[a] = Vqi + kfi;
   xV = DLb("<[^>]*>|&[^;]+;", yvi);
@@ -31812,7 +31813,7 @@ function Xl(d) {
     var b;
     var c;
     Gdi[b = ++Hdi] = null;
-    c = (Idi[b] = _gi + nfi, a).replace(/\\r\\n/g, Ngi);
+    c = (Idi[b] = _gi + nfi, a).replace(/\r\n/g, Ngi);
     Hdi = b - 1;
     return c;
   }
@@ -31825,7 +31826,7 @@ function Xl(d) {
     (Idi[k] = _gi + hfi, $doc).createElement(dhi).appendChild(d.cloneNode(true)).innerHTML;
   }
   if (e((Idi[k] = _gi + wfi, d).nodeType) && d.nodeType == 3) {
-    n = ehi + (Idi[k] = _gi + jfi, d).data.replace(/ /g, "▫").replace(/\\u00A0/, "▪") + ehi;
+    n = ehi + (Idi[k] = _gi + jfi, d).data.replace(/ /g, "▫").replace(/\u00A0/, "▪") + ehi;
     Hdi = k - 1;
     return n;
   }
@@ -32410,7 +32411,7 @@ function Z1b() {
   }
   if ((Idi[g] = uzi + $ei, a).length == 1 && WLc(Boi, a[0]) && WLc("BackCompat", (Idi[g] = uzi + jhi, b))) {
     Idi[g] = uzi + Wgi;
-    e = "GWT no longer supports Quirks Mode (document.compatMode=' BackCompat').<br>Make sure your application's host HTML page has a Standards Mode (document.compatMode=' CSS1Compat') doctype,<br>e.g. by using &lt;!doctype html&gt; at the start of your application's HTML page.<br><br>To continue using this unsupported rendering mode and risk layout problems, suppress this message by adding<br>the following line to your*.gwt.xml module file:<br>&nbsp;&nbsp;&lt;extend-configuration-property name=\\"document.compatMode\\" value=\\"" + (Idi[g] = uzi + cfi, b) + "\\"/&gt;";
+    e = "GWT no longer supports Quirks Mode (document.compatMode=' BackCompat').<br>Make sure your application's host HTML page has a Standards Mode (document.compatMode=' CSS1Compat') doctype,<br>e.g. by using &lt;!doctype html&gt; at the start of your application's HTML page.<br><br>To continue using this unsupported rendering mode and risk layout problems, suppress this message by adding<br>the following line to your*.gwt.xml module file:<br>&nbsp;&nbsp;&lt;extend-configuration-property name=\"document.compatMode\" value=\"" + (Idi[g] = uzi + cfi, b) + "\"/&gt;";
   } else {
     Idi[g] = uzi + sli;
     e = "Your *.gwt.xml module configuration prohibits the use of the current doucment rendering mode (document.compatMode=' " + (Idi[g] = uzi + uki, b) + "').<br>Modify your application's host HTML page doctype, or update your custom 'document.compatMode' configuration property settings.";
@@ -32459,7 +32460,7 @@ function fNd(a) {
   Lec((Idi[g] = UJi + qfi, a).f, f);
   Lec((Idi[g] = UJi + Dei, a).f, b);
   e = new (Idi[g] = UJi + rfi, a8b)();
-  Z7b((Idi[g] = UJi + ihi, e), "<span style=\\"color:white;\\">&nbsp;&nbsp;" + a.d.uu());
+  Z7b((Idi[g] = UJi + ihi, e), "<span style=\"color:white;\">&nbsp;&nbsp;" + a.d.uu());
   e7b((Idi[g] = UJi + $ei, dnc("dropdownFeedbackButton")), e);
   G7b((Idi[g] = UJi + khi, e), new MNd(a));
   d = new (Idi[g] = UJi + Wdi, Jad)();
@@ -32467,48 +32468,48 @@ function fNd(a) {
   Hdi = g - 1;
 }
 function Dm() {
-  var a = ["\\\\u0000", "\\\\u0001", "\\\\u0002", "\\\\u0003", "\\\\u0004", "\\\\u0005", "\\\\u0006", "\\\\u0007", "\\\\b", "\\\\t", "\\\\n", "\\\\u000B", "\\\\f", "\\\\r", "\\\\u000E", "\\\\u000F", "\\\\u0010", "\\\\u0011", "\\\\u0012", "\\\\u0013", "\\\\u0014", "\\\\u0015", "\\\\u0016", "\\\\u0017", "\\\\u0018", "\\\\u0019", "\\\\u001A", "\\\\u001B", "\\\\u001C", "\\\\u001D", "\\\\u001E", "\\\\u001F"];
+  var a = ["\\u0000", "\\u0001", "\\u0002", "\\u0003", "\\u0004", "\\u0005", "\\u0006", "\\u0007", "\\b", "\\t", "\\n", "\\u000B", "\\f", "\\r", "\\u000E", "\\u000F", "\\u0010", "\\u0011", "\\u0012", "\\u0013", "\\u0014", "\\u0015", "\\u0016", "\\u0017", "\\u0018", "\\u0019", "\\u001A", "\\u001B", "\\u001C", "\\u001D", "\\u001E", "\\u001F"];
   var b;
   var c;
   Gdi[b = ++Hdi] = Dm;
   (Idi[b] = thi + zhi, a)[34] = Ahi;
   (Idi[b] = thi + Bhi, a)[92] = Chi;
-  (Idi[b] = thi + Dhi, a)[173] = "\\\\u00ad";
-  (Idi[b] = thi + Ehi, a)[1536] = "\\\\u0600";
-  (Idi[b] = thi + qhi, a)[1537] = "\\\\u0601";
-  (Idi[b] = thi + Fhi, a)[1538] = "\\\\u0602";
-  (Idi[b] = thi + Ghi, a)[1539] = "\\\\u0603";
-  (Idi[b] = thi + Hhi, a)[1757] = "\\\\u06dd";
-  (Idi[b] = thi + Ihi, a)[1807] = "\\\\u070f";
-  (Idi[b] = thi + Jhi, a)[6068] = "\\\\u17b4";
-  (Idi[b] = thi + ahi, a)[6069] = "\\\\u17b5";
-  (Idi[b] = thi + nei, a)[8203] = "\\\\u200b";
-  (Idi[b] = thi + Khi, a)[8204] = "\\\\u200c";
-  (Idi[b] = thi + ogi, a)[8205] = "\\\\u200d";
-  (Idi[b] = thi + Nfi, a)[8206] = "\\\\u200e";
-  (Idi[b] = thi + Ofi, a)[8207] = "\\\\u200f";
-  (Idi[b] = thi + Lhi, a)[8232] = "\\\\u2028";
-  (Idi[b] = thi + Pfi, a)[8233] = "\\\\u2029";
-  (Idi[b] = thi + Qfi, a)[8234] = "\\\\u202a";
-  (Idi[b] = thi + Mhi, a)[8235] = "\\\\u202b";
-  (Idi[b] = thi + Rfi, a)[8236] = "\\\\u202c";
-  (Idi[b] = thi + Sfi, a)[8237] = "\\\\u202d";
-  (Idi[b] = thi + Vgi, a)[8238] = "\\\\u202e";
-  (Idi[b] = thi + Nhi, a)[8288] = "\\\\u2060";
-  (Idi[b] = thi + Ohi, a)[8289] = "\\\\u2061";
-  (Idi[b] = thi + Tfi, a)[8290] = "\\\\u2062";
-  (Idi[b] = thi + rhi, a)[8291] = "\\\\u2063";
-  (Idi[b] = thi + Phi, a)[8292] = "\\\\u2064";
-  (Idi[b] = thi + Qhi, a)[8298] = "\\\\u206a";
-  (Idi[b] = thi + Wfi, a)[8299] = "\\\\u206b";
-  (Idi[b] = thi + Xfi, a)[8300] = "\\\\u206c";
-  (Idi[b] = thi + Yfi, a)[8301] = "\\\\u206d";
-  (Idi[b] = thi + Rhi, a)[8302] = "\\\\u206e";
-  (Idi[b] = thi + Zfi, a)[8303] = "\\\\u206f";
-  (Idi[b] = thi + $fi, a)[65279] = "\\\\ufeff";
-  (Idi[b] = thi + _fi, a)[65529] = "\\\\ufff9";
-  (Idi[b] = thi + Shi, a)[65530] = "\\\\ufffa";
-  (Idi[b] = thi + Thi, a)[65531] = "\\\\ufffb";
+  (Idi[b] = thi + Dhi, a)[173] = "\\u00ad";
+  (Idi[b] = thi + Ehi, a)[1536] = "\\u0600";
+  (Idi[b] = thi + qhi, a)[1537] = "\\u0601";
+  (Idi[b] = thi + Fhi, a)[1538] = "\\u0602";
+  (Idi[b] = thi + Ghi, a)[1539] = "\\u0603";
+  (Idi[b] = thi + Hhi, a)[1757] = "\\u06dd";
+  (Idi[b] = thi + Ihi, a)[1807] = "\\u070f";
+  (Idi[b] = thi + Jhi, a)[6068] = "\\u17b4";
+  (Idi[b] = thi + ahi, a)[6069] = "\\u17b5";
+  (Idi[b] = thi + nei, a)[8203] = "\\u200b";
+  (Idi[b] = thi + Khi, a)[8204] = "\\u200c";
+  (Idi[b] = thi + ogi, a)[8205] = "\\u200d";
+  (Idi[b] = thi + Nfi, a)[8206] = "\\u200e";
+  (Idi[b] = thi + Ofi, a)[8207] = "\\u200f";
+  (Idi[b] = thi + Lhi, a)[8232] = "\\u2028";
+  (Idi[b] = thi + Pfi, a)[8233] = "\\u2029";
+  (Idi[b] = thi + Qfi, a)[8234] = "\\u202a";
+  (Idi[b] = thi + Mhi, a)[8235] = "\\u202b";
+  (Idi[b] = thi + Rfi, a)[8236] = "\\u202c";
+  (Idi[b] = thi + Sfi, a)[8237] = "\\u202d";
+  (Idi[b] = thi + Vgi, a)[8238] = "\\u202e";
+  (Idi[b] = thi + Nhi, a)[8288] = "\\u2060";
+  (Idi[b] = thi + Ohi, a)[8289] = "\\u2061";
+  (Idi[b] = thi + Tfi, a)[8290] = "\\u2062";
+  (Idi[b] = thi + rhi, a)[8291] = "\\u2063";
+  (Idi[b] = thi + Phi, a)[8292] = "\\u2064";
+  (Idi[b] = thi + Qhi, a)[8298] = "\\u206a";
+  (Idi[b] = thi + Wfi, a)[8299] = "\\u206b";
+  (Idi[b] = thi + Xfi, a)[8300] = "\\u206c";
+  (Idi[b] = thi + Yfi, a)[8301] = "\\u206d";
+  (Idi[b] = thi + Rhi, a)[8302] = "\\u206e";
+  (Idi[b] = thi + Zfi, a)[8303] = "\\u206f";
+  (Idi[b] = thi + $fi, a)[65279] = "\\ufeff";
+  (Idi[b] = thi + _fi, a)[65529] = "\\ufff9";
+  (Idi[b] = thi + Shi, a)[65530] = "\\ufffa";
+  (Idi[b] = thi + Thi, a)[65531] = "\\ufffb";
   Idi[b] = thi + Uhi;
   c = a;
   Hdi = b - 1;
@@ -32646,10 +32647,10 @@ function zRd() {
   Hdi = a - 1;
 }
 var Ngi = "";
-var nxi = "\\n";
-var zIi = "\\n  at ";
-var AIi = "\\nCONTENT: \\n";
-var yIi = "\\nCaused by: ";
+var nxi = "\n";
+var zIi = "\n  at ";
+var AIi = "\nCONTENT: \n";
+var yIi = "\nCaused by: ";
 var Dmi = " ";
 var oJi = " </h1> <table> <tr> <td colspan='2'> <hr style='margin-top: 8px; margin-bottom: 8px;'> </td> </tr> <tr> <td> <span id='";
 var zJi = " </p> <p> <b> ";
@@ -32659,7 +32660,7 @@ var PIi = " </span> <span id='";
 var nJi = " <br>";
 var cEi = " out of range";
 var sIi = " params: ";
-var xhi = "\\"";
+var xhi = "\"";
 var Wki = "#";
 var exi = "#000";
 var jGi = "#E6B002";
@@ -33827,11 +33828,11 @@ var iGi = "<i class='fa fa-clock-o'></i> JD Someone";
 var hGi = "<i class='fa fa-clock-o'></i> JD Work";
 var aGi = "<i class='fa fa-question'></i>";
 var gGi = "<i class='fa fa-sort-asc'></i> Select JDownloader";
-var CDi = "<img onload='this.__gwtLastUnhandledEvent=\\"load\\";' src='";
+var CDi = "<img onload='this.__gwtLastUnhandledEvent=\"load\";' src='";
 var wJi = "<img src='/images/refresh.png' style='width: 16px; height:16px'> ";
 var JIi = "<p>Receive <b>captcha notifications</b> on your desktop.</p>";
 var CGi = "<span id='";
-var WJi = "<span style=\\"margin-right: 12px;\\">";
+var WJi = "<span style=\"margin-right: 12px;\">";
 var IIi = "<span style=color: red;>Your browser does not support web notifications.</span>";
 var QIi = "<span>";
 var Ryi = "=";
@@ -34020,7 +34021,7 @@ var ODi = "FocusImplSafari.java:";
 var JDi = "FocusImplStandard.java:";
 var NCi = "FocusPanel.java:";
 var RAi = "FocusWidget.java:";
-var rEi = "For input string: \\"";
+var rEi = "For input string: \"";
 var cxi = "FormatterImpl.java:";
 var bvi = "Fri";
 var Egi = "GWT.java:";
@@ -34131,7 +34132,7 @@ var Cxi = "LoggerImplRegular.java:";
 var Exi = "LoggerWithExposedConstructor.java:";
 var tHi = "Logging activated!";
 var uHi = "Logging deactivated.";
-var EIi = "Logging is now active. Click on the \\"Feedback\\" badge to send the log to the developers.";
+var EIi = "Logging is now active. Click on the \"Feedback\" badge to send the log to the developers.";
 var aJi = "Logging was active, so the feedback form is prefilled with your log. You can check and edit the log before it is sent:";
 var nEi = "Long.java:";
 var Zvi = "LongLib.java:";
@@ -34193,7 +34194,7 @@ var tDi = "RootPanel.java:";
 var tgi = "RuntimeException.java:";
 var Iui = "S";
 var Axi = "SEVERE";
-var XIi = "SUBJECT: \\n";
+var XIi = "SUBJECT: \n";
 var Sxi = "SafeHtmlString.java:";
 var Txi = "SafeHtmlUtils.java:";
 var Hxi = "SafeStylesBuilder.java:";
@@ -34298,11 +34299,11 @@ var kLi = "[Lcom.google.gwt.user.client.ui.";
 var wKi = "[Ljava.lang.";
 var JKi = "[Lorg.jdownloader.gwt.library.client.deferred.";
 var Uxi = "[a-z]+|#[0-9]+|#x[0-9a-fA-F]+";
-var UEi = "\\\\";
-var Ahi = "\\\\\\"";
-var nIi = "\\\\.";
-var Chi = "\\\\\\\\";
-var Bvi = "\\\\s+";
+var UEi = "\\";
+var Ahi = "\\\"";
+var nIi = "\\.";
+var Chi = "\\\\";
+var Bvi = "\\s+";
 var hhi = "]";
 var Avi = "]*$";
 var wvi = "]*[";
@@ -35954,7 +35955,7 @@ _.Vc = function vq(b) {
       if ((Idi[f] = ami + $ei, d) != nmi && d != omi && d != "toString") {
         try {
           var e = (Idi[f] = ami + lhi, d) != "__gwt$exception" ? b[d] : "<skipped>";
-          c += "\\n " + (Idi[f] = ami + Sdi, d) + qgi + e;
+          c += "\n " + (Idi[f] = ami + Sdi, d) + qgi + e;
         } catch (a) {}
       }
     }
@@ -36765,7 +36766,8 @@ _.Lc = function iH() {
   Gdi[a = ++Hdi] = iH;
   Idi[a] = Dpi + Ppi;
   _G();
-  if (Idi[a] = Dpi + pli, XG) {
+  Idi[a] = Dpi + pli;
+  if (XG) {
     Idi[a] = Dpi + qli;
     aH(null);
   }
@@ -38498,7 +38500,7 @@ _.tS = function KMb() {
   var a;
   var b;
   Gdi[a = ++Hdi] = KMb;
-  b = "safe: \\"" + (Idi[a] = Sxi + smi, FMb(this)) + xhi;
+  b = "safe: \"" + (Idi[a] = Sxi + smi, FMb(this)) + xhi;
   Hdi = a - 1;
   return b;
 };
@@ -44492,7 +44494,7 @@ _.Lc = function pAd() {
   var a;
   var b;
   Gdi[b = ++Hdi] = pAd;
-  if (gZ((Idi[b] = kIi + Hfi, this.a).Bc(), null) && ULc(this.a.Bc(), "Permission denied to access property \\"currentTarget\\"")) {
+  if (gZ((Idi[b] = kIi + Hfi, this.a).Bc(), null) && ULc(this.a.Bc(), "Permission denied to access property \"currentTarget\"")) {
     Hdi = b - 1;
     return;
   }
@@ -44667,9 +44669,9 @@ _.Ie = function JBd(a) {
   mA(Ev((Idi[c] = xIi + Hki, this.d)), (Idi[c] = Ioi + rei, BC(), Idi[c] = xIi + Hki, AC));
   Idi[c] = xIi + qfi;
   b = Ngi;
-  b = (Idi[c] = xIi + Eei, b) + "SUBJECT: \\nISSUE LOG REV " + mIi;
-  b = (Idi[c] = xIi + Yei, b) + "\\nBROWSER: \\n" + n4b() + " | " + o4b() + " | Cookies: " + p4b();
-  b = (Idi[c] = xIi + rfi, b) + AIi + Hkc(this.c) + "\\n\\nStack Trace:\\n\\n" + Hkc(this.b);
+  b = (Idi[c] = xIi + Eei, b) + "SUBJECT: \nISSUE LOG REV " + mIi;
+  b = (Idi[c] = xIi + Yei, b) + "\nBROWSER: \n" + n4b() + " | " + o4b() + " | Cookies: " + p4b();
+  b = (Idi[c] = xIi + rfi, b) + AIi + Hkc(this.c) + "\n\nStack Trace:\n\n" + Hkc(this.b);
   f8c((Idi[c] = xIi + Zei, J8c()), TP(b), new RBd(this));
   Hdi = c - 1;
 };
@@ -47181,5 +47183,3 @@ $sendStats("moduleStartup", "moduleEvalEnd");
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId, __gwtModuleFunction.__computePropValue);
 $sendStats("moduleStartup", "end");
 //# sourceURL=myjdownloader-0.js
-`
-])

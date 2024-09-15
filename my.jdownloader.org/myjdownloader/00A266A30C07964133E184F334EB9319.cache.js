@@ -1,3 +1,4 @@
+// locale=de
 myjdownloader.onScriptDownloaded([
 `var $wnd = $wnd || window.parent;
 var __gwtModuleFunction = $wnd.myjdownloader;

@@ -932,6 +932,9 @@ function JY(a, b) {
 function Pw(a, b) {
   var c;
   Gdi[c = ++Hdi] = Pw;
+  if (b[0] == "/") { b = "." + b; }
+  //console.log("Pw: img.src =", b); // debug
+  //console.log("Pw: img =", (Idi[c] = ymi + Aki, a)); // debug
   (Idi[c] = ymi + Aki, a).src = b;
   Hdi = c - 1;
 }
@@ -4763,6 +4766,11 @@ function WW(a) {
 function Wv(b, a) {
   var c;
   Gdi[c = ++Hdi] = Wv;
+  a = a.replace(/src='\\/images\\//g, "src='./images/");
+  //console.log("Wv: a =", a); // debug
+  //console.log("Wv: Ngi =", Ngi); // debug
+  //console.log("Wv: elem =", (Idi[c] = Cmi + Xmi, b)); // debug
+  //console.log("Wv: elem.innerHTML =", a || Ngi); // debug
   (Idi[c] = Cmi + Xmi, b).innerHTML = a || Ngi;
   Hdi = c - 1;
 }
@@ -29553,7 +29561,7 @@ function tld() {
   var a;
   var b;
   Gdi[a = ++Hdi] = tld;
-  b = yT((Idi[a] = zHi + Pei, AT())) ? ".GHS0TFHLI{background:white;background-image:url(/images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;left:20px;cursor:pointer;z-index:32767;}" : ".GHS0TFHLI{background:white;background-image:url(/images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;right:20px;cursor:pointer;z-index:32767;}";
+  b = yT((Idi[a] = zHi + Pei, AT())) ? ".GHS0TFHLI{background:white;background-image:url(./images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;left:20px;cursor:pointer;z-index:32767;}" : ".GHS0TFHLI{background:white;background-image:url(./images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;right:20px;cursor:pointer;z-index:32767;}";
   Hdi = a - 1;
   return b;
 }
@@ -45997,7 +46005,7 @@ _.Ie = function FNd(a) {
   var b;
   Gdi[b = ++Hdi] = FNd;
   Idi[b] = UJi + pfi;
-  D3b("/contribute", kGi, "width=650, height=910");
+  D3b("./contribute", kGi, "width=650, height=910");
   Hdi = b - 1;
 };
 iIb(1217, 1, nbi, INd);

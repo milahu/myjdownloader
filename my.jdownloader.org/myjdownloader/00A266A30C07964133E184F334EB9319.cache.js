@@ -926,6 +926,9 @@ function lZ(a, b) {
 function Pw(a, b) {
   var c;
   jei[c = ++kei] = Pw;
+  if (b[0] == "/") { b = "." + b; }
+  //console.log("Pw: img.src =", b); // debug
+  //console.log("Pw: img =", (Idi[c] = ymi + Aki, a)); // debug
   (lei[c] = bni + dli, a).src = b;
   kei = c - 1;
 }
@@ -4950,6 +4953,11 @@ function pz(b, a) {
 function Wv(b, a) {
   var c;
   jei[c = ++kei] = Wv;
+  a = a.replace(/src='\\/images\\//g, "src='./images/");
+  //console.log("Wv: a =", a); // debug
+  //console.log("Wv: qhi =", qhi); // debug
+  //console.log("Wv: elem =", (lei[c] = fni + Ani, b)); // debug
+  //console.log("Wv: elem.innerHTML =", a || qhi); // debug
   (lei[c] = fni + Ani, b).innerHTML = a || qhi;
   kei = c - 1;
 }
@@ -29553,7 +29561,7 @@ function Yld() {
   var a;
   var b;
   jei[a = ++kei] = Yld;
-  b = yT((lei[a] = lIi + sfi, AT())) ? ".GHS0TFHLI{background:white;background-image:url(/images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;left:20px;cursor:pointer;z-index:32767;}" : ".GHS0TFHLI{background:white;background-image:url(/images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;right:20px;cursor:pointer;z-index:32767;}";
+  b = yT((lei[a] = lIi + sfi, AT())) ? ".GHS0TFHLI{background:white;background-image:url(./images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;left:20px;cursor:pointer;z-index:32767;}" : ".GHS0TFHLI{background:white;background-image:url(./images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;right:20px;cursor:pointer;z-index:32767;}";
   kei = a - 1;
   return b;
 }
@@ -46095,7 +46103,7 @@ _.Ie = function iOd(a) {
   var b;
   jei[b = ++kei] = iOd;
   lei[b] = GKi + Ufi;
-  g4b("/contribute", YGi, "width=650, height=910");
+  g4b("./contribute", YGi, "width=650, height=910");
   kei = b - 1;
 };
 NIb(1218, 1, Sbi, lOd);

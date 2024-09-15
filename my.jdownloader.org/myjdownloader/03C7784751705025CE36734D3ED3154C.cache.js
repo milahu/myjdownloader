@@ -24533,7 +24533,7 @@ function uOd(a) {
   Gdi[b = ++Hdi] = uOd;
   r9c("[ACCOUNT_SETTINGS_POPUP] [REQUEST_PASSWORD_CHANGE] Captcha challenge solved? " + (Idi[b] = YJi + Odi, a));
   if (xHc((Idi[b] = YJi + Ldi, a))) {
-    D3b((Idi[b] = YJi + gfi, gl()) + "../login.html#forgotPassword?email=" + x9c(), kGi, Ngi);
+    D3b((Idi[b] = YJi + gfi, gl()) + "./login.html#forgotPassword?email=" + x9c(), kGi, Ngi);
   }
   Hdi = b - 1;
 }

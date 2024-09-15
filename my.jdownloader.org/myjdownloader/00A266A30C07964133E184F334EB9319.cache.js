@@ -24533,7 +24533,7 @@ function ZOd(a) {
   jei[b = ++kei] = ZOd;
   W9c("[ACCOUNT_SETTINGS_POPUP] [REQUEST_PASSWORD_CHANGE] Captcha challenge solved? " + (lei[b] = KKi + rei, a));
   if (aIc((lei[b] = KKi + oei, a))) {
-    g4b((lei[b] = KKi + Lfi, gl()) + "../login.html#forgotPassword?email=" + aad(), YGi, qhi);
+    g4b((lei[b] = KKi + Lfi, gl()) + "./login.html#forgotPassword?email=" + aad(), YGi, qhi);
   }
   kei = b - 1;
 }

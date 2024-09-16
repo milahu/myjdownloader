@@ -1815,6 +1815,7 @@ function jq(a) {
   Hdi = b - 1;
 }
 function lq(a) {
+  // StackTraceCreator.java:518
   var b;
   Gdi[b = ++Hdi] = lq;
   new (Idi[b] = ami + kmi, Dq)().Uc(a);
@@ -2221,6 +2222,7 @@ function f8c(a, b, c) {
   Hdi = d - 1;
 }
 function o8c(a, b, c) {
+  // JDAPI.java:72
   var d;
   Gdi[d = ++Hdi] = o8c;
   p8c((Idi[d] = YGi + Efi, a), b, c);
@@ -5101,6 +5103,8 @@ function wTc() {
   Hdi = a - 1;
 }
 function bYc() {
+  // some error
+  // called by AbstractList.java:45
   var a;
   Gdi[a = ++Hdi] = bYc;
   (Idi[a] = QFi + sgi, uk).call(this);
@@ -6958,6 +6962,7 @@ function nsc(a, b) {
   Hdi = c - 1;
 }
 function Xgc(a, b) {
+  // AbstractList.java:191
   var c;
   Gdi[c = ++Hdi] = Xgc;
   throw new (Idi[c] = dDi + gei, ZJc)(eDi + a + fDi + b);
@@ -8947,6 +8952,7 @@ function PVc(a) {
   return c;
 }
 function lbd(a) {
+  // DevicesControllerService.java:48
   var b;
   var c;
   Gdi[b = ++Hdi] = lbd;
@@ -11584,6 +11590,7 @@ function ZU(a, b, c, d) {
   return f;
 }
 function vk(a) {
+  // RuntimeException.java:29
   var b;
   Gdi[b = ++Hdi] = vk;
   (Idi[b] = tgi + Rdi, qk).call(this, a);
@@ -11592,6 +11599,7 @@ function vk(a) {
   Hdi = b - 1;
 }
 function qk(a) {
+  // Exception.java:29
   var b;
   Gdi[b = ++Hdi] = qk;
   (Idi[b] = rgi + Rdi, hk).call(this, a);
@@ -12367,6 +12375,7 @@ function QJc(a) {
   Hdi = b - 1;
 }
 function ZJc(a) {
+  // IndexOutOfBoundsException.java:29
   var b;
   Gdi[b = ++Hdi] = ZJc;
   (Idi[b] = lEi + Rdi, vk).call(this, a);
@@ -13395,6 +13404,7 @@ function Fo(a, b) {
   return d;
 }
 function Sgc(a, b) {
+  // AbstractList.java:183
   var c;
   Gdi[c = ++Hdi] = Sgc;
   if ((Idi[c] = dDi + agi, a) < 0 || a >= b) {
@@ -15863,6 +15873,7 @@ function to(a) {
   return c;
 }
 function jhc(a, b) {
+  // ArrayList.java:157
   var c;
   var d;
   Gdi[c = ++Hdi] = jhc;
@@ -18129,6 +18140,7 @@ function $mc(a) {
   Hdi = b - 1;
 }
 function hk(a) {
+  // Throwable.java:56
   var b;
   Gdi[b = ++Hdi] = hk;
   (Idi[b] = Kfi + hgi, ub).call(this);
@@ -19455,6 +19467,7 @@ function bn() {
   Hdi = a - 1;
 }
 function gNd(a) {
+  // DropDownPresenter.java:217
   var b;
   Gdi[b = ++Hdi] = gNd;
   if (!(Idi[b] = UJi + iki, a).e) {
@@ -24603,6 +24616,8 @@ function Asc(a, b) {
   Hdi = c - 1;
 }
 function ko(a, b, c) {
+  // Impl.java:299
+  // tight loop: main loop. trampoline?
   var e;
   var f;
   Gdi[e = ++Hdi] = ko;
@@ -26445,6 +26460,7 @@ function Dfc(a) {
   return c;
 }
 function zq(a) {
+  // JsArrayString.java:42
   var b;
   var c;
   var d;
@@ -26715,6 +26731,7 @@ function UHb(a) {
   return c;
 }
 function mbd(a, b) {
+  // DevicesControllerService.java:114
   var c;
   var d;
   var e;
@@ -27081,6 +27098,8 @@ function Frd(a, b) {
   Hdi = c - 1;
 }
 function po(e) {
+  // no idea what this is doing
+  // this is called rather often
   var f;
   Gdi[f = ++Hdi] = po;
   Hdi = f - 1;
@@ -27443,6 +27462,7 @@ function Qac(a, b) {
   Hdi = c - 1;
 }
 function OGb() {
+  // EntryMethodHolder.java:22
   var a;
   Gdi[a = ++Hdi] = OGb;
   Idi[a] = "EntryMethodHolder.java:" + vhi;
@@ -28190,6 +28210,7 @@ function g8c(e, c, d) {
   Hdi = f - 1;
 }
 function p8c(e, c, d) {
+  // JDAPI.java:76
   var f;
   Gdi[f = ++Hdi] = p8c;
   (Idi[f] = YGi + ofi, e).listDevices(d).done(function (a) {
@@ -29033,6 +29054,8 @@ function b5b() {
   Hdi = g - 1;
 }
 function qo(b, c, d) {
+  // Impl.java:363
+  // tight loop: main loop. trampoline?
   var e;
   var f;
   var g;
@@ -30667,6 +30690,7 @@ function tp(a) {
   Hdi = j - 1;
 }
 function eAd(a) {
+  // Main.java:65
   var b;
   var c;
   Gdi[c = ++Hdi] = eAd;
@@ -32424,6 +32448,7 @@ function Z1b() {
   Hdi = g - 1;
 }
 function fNd(a) {
+  // DropDownPresenter.java:93
   var b;
   var c;
   var d;
@@ -35531,6 +35556,7 @@ iIb(97, 1, {
   196: 1
 });
 _.Ac = function kk() {
+  // Throwable.java:115
   var a;
   Gdi[a = ++Hdi] = kk;
   Idi[a] = Kfi + Wdi;
@@ -35985,6 +36011,7 @@ _.Rc = function Eq() {
 };
 _.Sc = function Fq(a) {};
 _.Uc = function Gq(a) {
+  // StackTraceCreator.java:180
   var b;
   var c;
   var d;
@@ -40021,6 +40048,7 @@ _.Kg = function Ahc(a) {
   return c;
 };
 _.El = function Bhc(a) {
+  // ArrayList.java:156
   var b;
   var c;
   Gdi[b = ++Hdi] = Bhc;
@@ -41388,6 +41416,7 @@ _.ml = function yRc() {
   return b;
 };
 _.nl = function zRc() {
+  // AbstractList.java:45
   var a;
   var b;
   Gdi[a = ++Hdi] = zRc;
@@ -43554,6 +43583,7 @@ _.b = false;
 var hbd = null;
 iIb(969, 1, {}, sbd);
 _.Vn = function tbd(a) {
+  // DevicesControllerService.java:88
   var b;
   var c;
   var d;

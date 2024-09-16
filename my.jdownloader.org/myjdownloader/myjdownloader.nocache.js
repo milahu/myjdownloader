@@ -236,7 +236,7 @@ function myjdownloader() {
     };
     v(pb, qb);
     // load the xxx.cache.js file with <script src="xxx.cache.js"></script>
-    console.log("myjdownloader.nocache.js loading", k); // debug
+    console.log("loading cached", k); // debug
     var n = t.createElement(nb);
     n.src = k;
     if (0) {

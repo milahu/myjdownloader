@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# myjdownloader.onScriptDownloaded is
+# "function m(c)" in my.jdownloader.org/myjdownloader/myjdownloader.nocache.js
+# which joins the strings in the c array
+# and adds them to a new <script> tag in the html document
+
 set -eux
 
 # wakaru gives better result than webcrack

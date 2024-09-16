@@ -197,6 +197,9 @@ function myjdownloader() {
       }, 50);
     }
     function m(c) {
+      // myjdownloader.onScriptDownloaded
+      // eval javascript code c.join("")
+      // by adding it to the html document in a temporary <script> element
       function d(a, b) {
         a.removeChild(b);
       }

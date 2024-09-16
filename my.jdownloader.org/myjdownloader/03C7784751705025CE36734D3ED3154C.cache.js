@@ -21474,8 +21474,30 @@ function Pn(a, b, c) {
   Hdi = d - 1;
 }
 function Yp(d, e) {
+  // loader for myjdownloader/deferredjs/xxx/yyy.cache.js files
+  // xxx is the basename of this .cache.js file
+  // yyy is some integer between 1 and 12, maybe more in the future
+
+  // load unpacked script
+  console.log("loading deferred", e.g); // debug
+  var t = document;
+  var nb = "script";
+  function F() {
+    // get the <body> element
+    return document.getElementsByTagName("body")[0];
+  }
+  // based on my.jdownloader.org/myjdownloader/myjdownloader.nocache.js
+  var n = t.createElement(nb);
+  n.src = e.g;
+  var e = F();
+  e.appendChild(n);
+  e.removeChild(n);
+  return;
+
+  // load packed script
   var f;
   Gdi[f = ++Hdi] = Yp;
+  // _li = "runAsyncCallback"
   (Idi[f] = $li + Pdi, __gwtModuleFunction)[_li + d] = Fdi(function (a, b) {
     var c;
     Gdi[c = ++Hdi] = null;

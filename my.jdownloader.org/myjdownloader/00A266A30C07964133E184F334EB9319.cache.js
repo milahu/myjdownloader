@@ -1,3 +1,4 @@
+// locale=de
 // code block 0
 var $wnd = $wnd || window.parent;
 var __gwtModuleFunction = $wnd.myjdownloader;

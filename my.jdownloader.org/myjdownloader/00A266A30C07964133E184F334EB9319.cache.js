@@ -21476,8 +21476,30 @@ function yAd() {
   return false;
 }
 function Yp(d, e) {
+  // loader for myjdownloader/deferredjs/xxx/yyy.cache.js files
+  // xxx is the basename of this .cache.js file
+  // yyy is some integer between 1 and 12, maybe more in the future
+
+  // load unpacked script
+  console.log("loading deferred", e.g); // debug
+  var t = document;
+  var nb = "script";
+  function F() {
+    // get the <body> element
+    return document.getElementsByTagName("body")[0];
+  }
+  // based on my.jdownloader.org/myjdownloader/myjdownloader.nocache.js
+  var n = t.createElement(nb);
+  n.src = e.g;
+  var e = F();
+  e.appendChild(n);
+  e.removeChild(n);
+  return;
+
+  // load packed script
   var f;
   jei[f = ++kei] = Yp;
+  // var Emi = "runAsyncCallback";
   (lei[f] = Dmi + sei, __gwtModuleFunction)[Emi + d] = iei(function (a, b) {
     var c;
     jei[c = ++kei] = null;

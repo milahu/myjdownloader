@@ -4,6 +4,8 @@ var $wnd = $wnd || window.parent;
 $wnd.jd = $wnd.jd || {};
 // hardcoded device id
 $wnd.jd._deviceId = "4c9af5abdf78d8c90eec6bf41e571a19";
+// dynamic device name
+$wnd.jd._deviceName = $wnd.location.host;
 var __gwtModuleFunction = $wnd.myjdownloader;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats("moduleStartup", "moduleEvalStart");

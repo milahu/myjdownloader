@@ -58,13 +58,11 @@ body {
 }
 ::-moz-selection {
   background: #307782;
-  color: #fff;
-  text-shadow: none;
+  color: black;
 }
 ::selection {
   background: #307782;
-  color: #fff;
-  text-shadow: none;
+  color: black;
 }
 a {
   cursor: pointer;
@@ -241,7 +239,7 @@ textarea:invalid {
   letter-spacing: inherit;
   font-smoothing: antialiased;
   text-decoration: none;
-  color: #fff !important;
+  color: black !important;
   border-radius: 3px;
   background-color: #eebb1b;
   background-image: -webkit-gradient(
@@ -249,17 +247,16 @@ textarea:invalid {
     left top,
     left bottom,
     from(#f3d435),
-    to(#e9a201)
+    to(lightgray)
   );
-  background-image: -webkit-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -moz-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -ms-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -o-linear-gradient(top, #f3d435, #e9a201);
-  background-image: linear-gradient(to bottom, #f3d435, #e9a201);
-  -pie-background: linear-gradient(#f3d435, #e9a201);
+  background-image: -webkit-linear-gradient(top, #f3d435, lightgray);
+  background-image: -moz-linear-gradient(top, #f3d435, lightgray);
+  background-image: -ms-linear-gradient(top, #f3d435, lightgray);
+  background-image: -o-linear-gradient(top, #f3d435, lightgray);
+  background-image: linear-gradient(to bottom, #f3d435, lightgray);
+  -pie-background: linear-gradient(#f3d435, lightgray);
   border: 1px solid #cd8000;
   border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
   box-shadow: 0 0 2px #fff inset;
   cursor: pointer;
   -webkit-transition: all 0.1s linear;
@@ -275,14 +272,14 @@ textarea:invalid {
 .xbutton:active,
 .xbutton:hover,
 .xbutton:visited {
-  color: #fff;
+  color: black;
 }
 .xbutton[disabled] {
   background-color: lightgrey;
 }
 .xbutton:hover {
-  border-color: #e89b00 #b16400 #b16400;
-  background-color: #f6c316;
+  border-color: #bebebe;
+  background-color: lightgrey;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -339,16 +336,17 @@ textarea:invalid {
   box-sizing: border-box;
 }
 .bg-bluebox {
-  background-color: #d6f8f7;
+  background-color: white;
 }
 .bg-bluelight {
-  background-color: #c6e5e7;
+  background-color: lightgray;
+  background-color: white;
 }
 .bg-bluemedium {
-  background-color: #89c4c6;
+  background-color: white;
 }
 .bg-bluedark {
-  background-color: #22545c;
+  background-color: white;
 }
 h1,
 h2,
@@ -362,13 +360,10 @@ h5 {
   behavior: url(../css/PIE.htc);
 }
 body {
-  text-shadow: 0 1px 0 #daf9fa;
 }
 .bg-bluemedium {
-  text-shadow: 0 1px 0 #97eef1;
 }
 .bg-bluebox {
-  text-shadow: 0 1px 0 #fff;
 }
 h1,
 h2 {
@@ -388,7 +383,7 @@ h3 {
   margin-bottom: 3px;
 }
 hr {
-  border-color: #22545c;
+  border-color: black;
 }
 .textbox {
   border-radius: 3px;
@@ -401,8 +396,7 @@ hr {
   color: #e6b002;
 }
 .content {
-  background-color: #d6f8f7;
-  text-shadow: 0 1px 0 #fff;
+  background-color: white;
   z-index: 0;
   margin-top: 23px;
   padding: 25px 26px;
@@ -426,17 +420,16 @@ hr {
     left top,
     left bottom,
     from(#f3d435),
-    to(#e9a201)
+    to(lightgray)
   );
-  background-image: -webkit-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -moz-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -ms-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -o-linear-gradient(top, #f3d435, #e9a201);
-  background-image: linear-gradient(to bottom, #f3d435, #e9a201);
-  -pie-background: linear-gradient(#f3d435, #e9a201);
+  background-image: -webkit-linear-gradient(top, #f3d435, lightgray);
+  background-image: -moz-linear-gradient(top, #f3d435, lightgray);
+  background-image: -ms-linear-gradient(top, #f3d435, lightgray);
+  background-image: -o-linear-gradient(top, #f3d435, lightgray);
+  background-image: linear-gradient(to bottom, #f3d435, lightgray);
+  -pie-background: linear-gradient(#f3d435, lightgray);
   border: 1px solid #cd8000;
   border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
   box-shadow: 0 0 2px #fff inset;
   cursor: pointer;
   -webkit-transition: all 0.1s linear;
@@ -450,26 +443,11 @@ hr {
 ._button:active,
 ._button:hover,
 ._button:visited {
-  color: #fff;
+  color: black;
 }
 ._button:hover {
-  border-color: #e89b00 #b16400 #b16400;
-  background-color: #f6c316;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ffdb29),
-    to(#ecaa04)
-  );
-  background-image: -webkit-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -moz-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -ms-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
-  -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(../css/PIE.htc);
-  box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
+  border-color: #bebebe;
+  background-color: lightgrey;
 }
 ._button:active {
   box-shadow: 0 0 6px #b67f01 inset, 0 0 4px #fff;
@@ -503,17 +481,16 @@ hr {
     left top,
     left bottom,
     from(#f3d435),
-    to(#e9a201)
+    to(lightgray)
   );
-  background-image: -webkit-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -moz-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -ms-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -o-linear-gradient(top, #f3d435, #e9a201);
-  background-image: linear-gradient(to bottom, #f3d435, #e9a201);
-  -pie-background: linear-gradient(#f3d435, #e9a201);
+  background-image: -webkit-linear-gradient(top, #f3d435, lightgray);
+  background-image: -moz-linear-gradient(top, #f3d435, lightgray);
+  background-image: -ms-linear-gradient(top, #f3d435, lightgray);
+  background-image: -o-linear-gradient(top, #f3d435, lightgray);
+  background-image: linear-gradient(to bottom, #f3d435, lightgray);
+  -pie-background: linear-gradient(#f3d435, lightgray);
   border: 1px solid #cd8000;
   border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
   box-shadow: 0 0 2px #fff inset;
   cursor: pointer;
   -webkit-transition: all 0.1s linear;
@@ -528,26 +505,11 @@ hr {
 .inlinebutton:active,
 .inlinebutton:hover,
 .inlinebutton:visited {
-  color: #fff;
+  color: black;
 }
 .inlinebutton:hover {
-  border-color: #e89b00 #b16400 #b16400;
-  background-color: #f6c316;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ffdb29),
-    to(#ecaa04)
-  );
-  background-image: -webkit-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -moz-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -ms-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
-  -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(../css/PIE.htc);
-  box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
+  border-color: #bebebe;
+  background-color: lightgrey;
 }
 .inlinebutton:active {
   box-shadow: 0 0 6px #b67f01 inset, 0 0 4px #fff;
@@ -575,8 +537,10 @@ hr {
   position: relative;
 }
 body {
-  background-color: #c6e5e7;
+  background-color: lightgray;
+  background-color: white;
   color: #18383f;
+  color: black;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 19px;
@@ -586,7 +550,7 @@ a:active,
 a:hover,
 a:visited {
   text-decoration: none;
-  color: #18383f;
+  color: blue;
 }
 .teaser {
   margin-top: 70px;
@@ -597,7 +561,7 @@ a:visited {
   background-repeat: no-repeat;
 }
 footer {
-  background-color: #22545c;
+  background-color: white;
   font-family: "Yanone Kaffeesatz", sans-serif;
   padding: 8px;
   letter-spacing: inherit;
@@ -655,7 +619,6 @@ footer {
     background: 0 0 !important;
     color: #000 !important;
     box-shadow: none !important;
-    text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important;
   }
@@ -746,8 +709,7 @@ footer {
   background-position: 0 -84px;
 }
 #development #gettingstarted {
-  background-color: #d6f8f7;
-  text-shadow: 0 1px 0 #fff;
+  background-color: white;
   padding: 20px 40px;
   margin-bottom: 80px;
 }
@@ -813,7 +775,7 @@ footer {
   display: none;
   border-top: solid #d5edec 1px;
   box-shadow: 0 0 4px #0f292e inset;
-  background-color: #22545c;
+  background-color: white;
 }
 #home #slideOut .closebutton {
   margin: 10px 0;
@@ -845,6 +807,7 @@ footer {
 #home #slideOut #download-other > div {
   position: absolute;
   color: #18383f;
+  color: black;
   font-size: 16px;
   text-align: center;
   width: 140px;
@@ -921,7 +884,7 @@ footer {
   margin-bottom: 38px;
   padding: 170px 0 0;
   font-size: 13px;
-  color: #dbf1f6;
+  color: black;
   float: left;
   width: 273px;
   text-align: justify;
@@ -930,7 +893,6 @@ footer {
   background-position: 0 0;
 }
 #home #slideOut #install-helper > div .description {
-  text-shadow: 0 1px 0 #002b33;
   background-color: #246b75;
   position: relative;
   padding: 15px 17px 20px 50px;
@@ -1224,7 +1186,7 @@ footer {
   border-top: 0;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
-  border-bottom: 11px solid #d6f8f7;
+  border-bottom: 11px solid white;
   padding: 0;
   width: 0;
   height: 0;
@@ -1270,8 +1232,7 @@ footer {
   font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: inherit;
   font-size: 1.2em;
-  text-shadow: 0 1px 0 #c86800;
-  color: #fff;
+  color: black;
 }
 #news .pagination a.current,
 #news .pagination a:hover {
@@ -1317,7 +1278,7 @@ footer {
   background-position: 0 -130px;
 }
 #noaccess {
-  background-color: #d6f8f7;
+  background-color: white;
   width: 60%;
   padding: 20px;
   margin: 10px;
@@ -1341,17 +1302,13 @@ footer {
   margin: 1px;
   border-radius: 3px;
   color: #18383f;
-  background-color: #c6e5e7;
+  color: black;
+  background-color: lightgray;
+  background-color: white;
   cursor: pointer;
-  text-shadow: 0 1px 0 #daf9fa;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
 }
 #pastebin #prettify:hover {
-  background-color: #89c4c6;
+  background-color: lightgrey;
 }
 #pastebin #submitpost input,
 #pastebin #submitpost textarea {
@@ -1380,17 +1337,16 @@ footer {
     left top,
     left bottom,
     from(#f3d435),
-    to(#e9a201)
+    to(lightgray)
   );
-  background-image: -webkit-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -moz-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -ms-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -o-linear-gradient(top, #f3d435, #e9a201);
-  background-image: linear-gradient(to bottom, #f3d435, #e9a201);
-  -pie-background: linear-gradient(#f3d435, #e9a201);
+  background-image: -webkit-linear-gradient(top, #f3d435, lightgray);
+  background-image: -moz-linear-gradient(top, #f3d435, lightgray);
+  background-image: -ms-linear-gradient(top, #f3d435, lightgray);
+  background-image: -o-linear-gradient(top, #f3d435, lightgray);
+  background-image: linear-gradient(to bottom, #f3d435, lightgray);
+  -pie-background: linear-gradient(#f3d435, lightgray);
   border: 1px solid #cd8000;
   border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
   box-shadow: 0 0 2px #fff inset;
   cursor: pointer;
   -webkit-transition: all 0.1s linear;
@@ -1409,45 +1365,15 @@ footer {
 #pastebin #submitpost input:active,
 #pastebin #submitpost input:hover,
 #pastebin #submitpost input:visited {
-  color: #fff;
+  color: black;
 }
 #pastebin #submitpost input:hover {
-  border-color: #e89b00 #b16400 #b16400;
-  background-color: #f6c316;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ffdb29),
-    to(#ecaa04)
-  );
-  background-image: -webkit-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -moz-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -ms-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
-  -pie-background: linear-gradient(#ffdb29, #ecaa04);
-  behavior: url(../css/PIE.htc);
-  box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
+  border-color: #bebebe;
+  background-color: lightgrey;
 }
 #pastebin #submitpost input:active {
-  box-shadow: 0 0 6px #b67f01 inset, 0 0 4px #fff;
-  border-color: #ac6100;
-  background-color: #eebc12;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ecaf09),
-    to(#efc91a)
-  );
-  background-image: -webkit-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: -moz-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: -ms-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
-  -pie-background: linear-gradient(#ecaf09, #efc91a);
-  behavior: url(../css/PIE.htc);
+  border-color: #bebebe;
+  background-color: lightgrey;
 }
 #support #main {
   padding-bottom: 80px;
@@ -1509,7 +1435,7 @@ footer {
 #support #menucontainer {
   float: left;
   width: 100%;
-  background-color: #d6f8f7;
+  background-color: white;
   overflow: hidden;
   position: relative;
   margin: 30px 0 20px;
@@ -1558,8 +1484,7 @@ footer {
 }
 #support #knowledgebase a.active,
 #support #knowledgebase a:hover {
-  background-color: #e4fcfc;
-  color: #edb70e;
+  color: blue;
 }
 #support #knowledgebase .icon {
   position: relative;
@@ -1662,7 +1587,7 @@ footer {
   border-top: 0;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
-  border-bottom: 11px solid #d6f8f7;
+  border-bottom: 11px solid white;
   padding: 0;
   width: 0;
   height: 0;
@@ -1676,20 +1601,17 @@ footer {
 footer #copyright {
   font-size: 12px;
   margin-top: 10px;
-  text-shadow: none;
-  color: #fff;
+  color: black;
 }
 footer nav > ul > li {
   float: left;
   margin-right: 50px;
-  text-shadow: 0 1px 0 #0a2226;
 }
 footer nav > ul > li > span {
   font-size: 26px;
   color: #e6b002;
   text-transform: uppercase;
   font-weight: 300;
-  text-shadow: 0 1px 0 #15464e;
 }
 footer nav > ul > li > ul {
   margin-top: 10px;
@@ -1700,20 +1622,19 @@ footer nav > ul > li > ul > li a:hover,
 footer nav > ul > li > ul > li a:visited {
   text-decoration: none;
   font-size: 16px;
-  color: #dbf5fb;
+  color: blue;
 }
 footer nav > ul > li > ul > li a:active:hover,
 footer nav > ul > li > ul > li a:hover,
 footer nav > ul > li > ul > li a:hover:hover,
 footer nav > ul > li > ul > li a:visited:hover {
-  color: #87c3c4;
+  color: blue;
 }
 footer nav > ul > li > ul > li a:active,
 footer nav > ul > li > ul > li a:active:active,
 footer nav > ul > li > ul > li a:hover:active,
 footer nav > ul > li > ul > li a:visited:active {
-  color: #14353a;
-  text-shadow: 0 1px 0 #06726d;
+  color: blue;
 }
 footer nav > ul > li > ul.social li > span {
   display: block;
@@ -1756,7 +1677,6 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 #languageselection {
   margin: 20px 0 20px 7px;
   float: right;
-  text-shadow: 0 1px 0 #00181c;
   font-size: 12px;
 }
 #languageselection a,
@@ -1770,7 +1690,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 #languageselection a:hover,
 #languageselection a:hover:hover,
 #languageselection a:visited:hover {
-  color: #dbf1f6;
+  color: black;
 }
 #latesttweet {
   text-decoration: none;
@@ -1785,7 +1705,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 #latesttweet:active,
 #latesttweet:hover,
 #latesttweet:visited {
-  color: #22545c;
+  color: black;
 }
 #latesttweet p {
   text-align: center;
@@ -1832,7 +1752,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
   behavior: url(../css/PIE.htc);
 }
 #dropDownMenuButton.current {
-  background-color: #193d43;
+  background-color: lightgrey;
   -webkit-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
   -ms-transition: background-color 0.1s linear;
@@ -1841,8 +1761,8 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 }
 #dropDownMenu {
   font-size: 13px !important;
-  background-image: url(../images/content_bg_hover.png);
-  border: 1px solid #22545c;
+  background-color: white;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 6px 0;
   -moz-box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1863,7 +1783,7 @@ footer nav > ul > li > ul.social li:active > .googleplus {
 }
 #myJDButton:hover,
 .dropDownButton:hover {
-  color: #fff;
+  color: black;
   cursor: pointer;
   background-image: url(../images/menu_bg.png);
 }
@@ -1871,19 +1791,18 @@ footer nav > ul > li > ul.social li:active > .googleplus {
   margin: 0;
 }
 #dropDownMenu .gwt-Button:hover {
-  color: #fff;
+  color: black;
 }
 #dropDownMenu #logoutButton {
   font-family: "Yanone Kaffeesatz", sans-serif;
   text-decoration: none;
-  color: #dbf1f6;
+  color: black;
   font-weight: 400;
   letter-spacing: inherit;
   font-size: 1.1em;
-  text-shadow: 0 1px 1px #00181c;
 }
 #dropDownMenu .dropDownMenuFooter {
-  background-color: #22545c;
+  background-color: white;
   box-shadow: 0 0 4px #0f292e inset;
 }
 #dropDownMenu .dropDownMenuFooter a {
@@ -1892,7 +1811,6 @@ footer nav > ul > li > ul.social li:active > .googleplus {
   text-decoration: none;
   font-size: 1.1em;
   color: #dbf5fb;
-  text-shadow: none;
 }
 .dropDownMenuFooter a:hover {
   background-color: transparent;
@@ -1952,12 +1870,11 @@ h2 {
   font-family: "Yanone Kaffeesatz", "Lucida Grande", sans-serif !important;
 }
 header nav p {
-  color: #dbf1f6;
+  color: black;
   font-size: 1.02em;
   letter-spacing: inherit;
   font-family: "Yanone Kaffeesatz", sans-serif;
   line-height: 16px;
-  text-shadow: none;
   margin-top: 20px;
   text-align: center;
   width: 78px;
@@ -1969,15 +1886,14 @@ header nav img {
 }
 footer #copyright {
   margin-top: 0;
-  color: #dbf1f6;
+  color: black;
 }
 footer a,
 footer a:active,
 footer a:hover,
 footer a:visited,
 footer span {
-  color: #dbf1f6;
-  text-shadow: none;
+  color: black;
   letter-spacing: 1px;
 }
 footer a {
@@ -1993,6 +1909,7 @@ input[disabled],
 textarea[disabled] {
   background-color: #ebebe4;
   outline-color: #18383f;
+  outline-color: black;
 }
 select[disabled] {
   background-color: #ebebe4;
@@ -2010,6 +1927,7 @@ select[disabled] {
 }
 .gwt-PopupPanel * {
   color: #18383f;
+  color: black;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -2115,91 +2033,30 @@ select[disabled] {
   letter-spacing: 1px;
   font-smoothing: antialiased;
   text-decoration: none;
-  color: #fff;
+  color: black;
   border-radius: 3px;
-  background-color: #eebb1b;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#f3d435),
-    to(#e9a201)
-  );
-  background-image: -webkit-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -moz-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -ms-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -o-linear-gradient(top, #f3d435, #e9a201);
-  background-image: linear-gradient(to bottom, #f3d435, #e9a201);
-  -pie-background: linear-gradient(#f3d435, #e9a201);
-  border: 1px solid #cd8000;
-  border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
-  box-shadow: 0 0 2px #fff inset;
+  background-color: lightgray;
+  border: 1px solid gray;
   cursor: pointer;
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-  behavior: url(../css/PIE.htc);
   text-align: center;
   padding: 7px 7px 3px;
   font-size: 1.3em !important;
 }
 .gwt-Button.grey {
-  color: #18383f;
-  background-color: #eebb1b;
-  background-image: linear-gradient(top, #a8a8a8 0, #dbdbdb 59%);
-  background-image: -o-linear-gradient(top, #a8a8a8 0, #dbdbdb 59%);
-  background-image: -moz-linear-gradient(top, #a8a8a8 0, #dbdbdb 59%);
-  background-image: -webkit-linear-gradient(top, #a8a8a8 0, #dbdbdb 59%);
-  background-image: -ms-linear-gradient(top, #a8a8a8 0, #dbdbdb 59%);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0, #a8a8a8),
-    color-stop(0.59, #dbdbdb)
-  );
-  border: 1px solid #cd8000;
-  border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
+  color: black;
+  color: grey;
+  background-color: lightgray;
+  border: 1px solid gray;
 }
 .gwt-Button:hover {
-  color: #fff;
-  border-color: #e89b00 #b16400 #b16400;
-  background-color: #f6c316;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ffdb29),
-    to(#ecaa04)
-  );
-  background-image: -webkit-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -moz-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -ms-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: -o-linear-gradient(top, #ffdb29, #ecaa04);
-  background-image: linear-gradient(to bottom, #ffdb29, #ecaa04);
-  box-shadow: 0 0 2px #fff inset, 0 0 7px #b3b3b3;
+  color: black;
+  background-color: lightgray;
+  border: 1px solid gray;
 }
 .gwt-Button:active {
-  color: #fff;
-  box-shadow: 0 0 6px #b67f01 inset, 0 0 4px #fff;
-  border-color: #ac6100;
-  background-color: #eebc12;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#ecaf09),
-    to(#efc91a)
-  );
-  background-image: -webkit-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: -moz-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: -ms-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: -o-linear-gradient(top, #ecaf09, #efc91a);
-  background-image: linear-gradient(to bottom, #ecaf09, #efc91a);
+  color: black;
+  background-color: lightgray;
+  border: 1px solid gray;
 }
 .gwt-Button img {
   width: 18px;
@@ -2218,10 +2075,9 @@ nav .gwt-Anchor {
 }
 .button {
   font-size: 1.1em !important;
-  color: #fff !important;
+  color: black !important;
   text-decoration: none !important;
   font-family: "Helvetica Neue", Arial, Sans-serif;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
   font-weight: 700;
   border-radius: 3px;
   padding: 5px 10px;
@@ -2281,26 +2137,25 @@ progress::-webkit-progress-bar {
   background: #eee;
 }
 progress {
-  color: #ade76f;
+  color: green;
   height: 28px;
 }
 progress::-moz-progress-bar {
-  background: #ade76f;
+  background: green;
 }
 progress::-webkit-progress-value {
-  background: #ade76f;
+  background: green;
 }
 progress[aria-valuenow]:before {
-  background: #ade76f;
+  background: green;
 }
 #18383F .ui-progressbar-value {
   background: #eee;
 }
 .progress-label {
   float: left;
-  color: #22545c;
+  color: black;
   font-weight: 700;
-  text-shadow: 1px 1px 0 #fff;
   text-align: center;
   line-height: 26px;
   width: 100%;
@@ -2319,8 +2174,8 @@ progress[aria-valuenow]:before {
   moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 #000;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 #000;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 #000;
-  background: #c6e5e7;
-  border: 1px solid #22545c;
+  background: white;
+  border: 1px solid black;
   z-index: 1;
 }
 .listFooter {
@@ -2336,7 +2191,7 @@ progress[aria-valuenow]:before {
 .listHeader a,
 .listHeader p,
 .selectionHeader p {
-  color: #22545c;
+  color: black;
   font-weight: 600;
   text-decoration: none;
   line-height: 29px;
@@ -2348,8 +2203,8 @@ progress[aria-valuenow]:before {
 }
 .contextMenu {
   font-size: 13px !important;
-  background-image: url(../images/content_bg_hover.png);
-  border: 1px solid #22545c;
+  background-color: white;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 6px 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 #000 inset;
@@ -2363,11 +2218,12 @@ progress[aria-valuenow]:before {
   margin-top: -2px;
 }
 .contextMenu a:hover {
-  background-color: #c6e5e7;
+  background-color: lightgray;
 }
 .contextMenu p,
 .selectionHeader p {
   color: #18383f;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   line-height: 29px;
@@ -2375,7 +2231,7 @@ progress[aria-valuenow]:before {
 }
 .contextMenu a,
 .selectionHeader a {
-  color: #22545c;
+  color: black;
   font-weight: 600;
   text-decoration: none;
   line-height: 29px;
@@ -2413,24 +2269,23 @@ progress[aria-valuenow]:before {
 }
 html.no-touch .listRow:hover,
 html.no-touch .listRowHover {
-  background-color: #c6e5e7;
-  border-color: #22545c;
-  border-top: 1px solid #22545c;
-  border-bottom: 1px solid #22545c;
+  background-color: lightgray;
+  border-color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   margin-top: -1px;
 }
 .listRow.rowSelected {
   border-top-width: 1px;
   border-bottom-width: 1px;
   margin-top: -1px;
-  background-color: #88c4c5;
-  text-shadow: none;
-  color: #fff;
-  border-color: #22545c;
+  background-color: #bebebe;
+  color: black;
+  border-color: black;
   font-weight: 700;
 }
 html.no-touch .listRow.rowSelected:hover {
-  background-color: #88c4c5;
+  background-color: #bebebe;
 }
 .listRow .expandButton {
   cursor: pointer;
@@ -2449,11 +2304,11 @@ html.no-touch .listRow.rowSelected:hover {
 }
 html .listRow .expandButton:hover {
   cursor: pointer;
-  color: #e6b002;
+  color: black;
 }
 .listLoadMoreAnchor {
   cursor: pointer;
-  background-color: #c6e5e7;
+  background-color: lightgray;
   box-shadow: 0 -3px 2px -2px gray;
 }
 .listLoadMoreAnchor div {
@@ -2477,7 +2332,6 @@ html .listRow .expandButton:hover {
   line-height: 100px;
   margin: 12px auto 0;
   text-align: center;
-  text-shadow: none;
   width: 100%;
 }
 .notification {
@@ -2529,7 +2383,7 @@ html .listRow .expandButton:hover {
   width: 250px;
   white-space: normal !important;
   padding: 8px;
-  background-color: #000;
+  background-color: lightgrey;
   opacity: 0.8;
   border-color: #fff;
   border-style: solid;
@@ -2537,13 +2391,12 @@ html .listRow .expandButton:hover {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   left: -10px;
-  color: #fff;
+  color: black;
   font-size: 14px !important;
   text-decoration: none !important;
   font-family: Arial, Helvetica, sans-serif !important;
   font-variant: normal;
   text-transform: none;
-  text-shadow: none !important;
 }
 .tooltip.helpTooltip {
   position: relative;
@@ -2682,7 +2535,8 @@ nav.navbar.myjd {
   -moz-transition: left 0.2s;
   -webkit-transition: left 0.2s;
   -o-transition: left 0.2s;
-  background-color: #c6e5e7;
+  background-color: lightgray;
+  background-color: white;
   font-size: 0.93em;
   white-space: nowrap;
   box-shadow: 0 -3px 2px -2px gray;
@@ -2690,7 +2544,7 @@ nav.navbar.myjd {
 .mainnav {
   display: block;
   width: 972px;
-  box-shadow: 0 1px 0 #1e4c53 inset, 0 -1px 2px #193d43 inset, 0 1px #dbf6fd;
+  box-shadow: 0 1px 0 #1e4c53 inset, 0 -1px 2px lightgrey inset, 0 1px #dbf6fd;
 }
 .mainnavMobile,
 .mainnavMobileTabs {
@@ -2709,7 +2563,7 @@ nav.navbar.myjd {
   display: flex;
 }
 header #logo {
-  color: #fff;
+  color: black;
   transition: opacity 0.5s;
   transition: display 0.5s;
   background: url(../images/logo.png) left center/100% no-repeat;
@@ -2722,7 +2576,7 @@ footer {
   box-shadow: 0 0 4px #0f292e inset;
   position: relative;
   bottom: 0;
-  background-color: #22545c;
+  background-color: white;
   width: 100%;
 }
 footer .wrap {
@@ -2746,7 +2600,7 @@ footer .wrap {
 .mainnavMobileTabs li a.mainNavButton.current {
   padding: 27px !important;
   margin: 0 !important;
-  border-bottom: 2px solid #e9a201 !important;
+  border-bottom: 2px solid lightgray !important;
   background-color: #47757d !important;
 }
 .dashboardContainer {
@@ -2826,7 +2680,7 @@ footer .wrap {
   margin-top: 10px;
 }
 .dashboardContainer .serviceEntry:hover {
-  background-color: #e6e6e6;
+  background-color: lightgrey;
   text-decoration: none;
 }
 .dashboardContainer .serviceEntry {
@@ -2965,7 +2819,8 @@ footer .wrap {
   position: fixed;
   z-index: 1;
   padding: 4px;
-  background-color: #c6e5e7;
+  background-color: lightgray;
+  background-color: white;
   font-size: 0.93em;
   white-space: nowrap;
   box-shadow: 0 -3px 2px -2px gray;
@@ -3044,7 +2899,6 @@ footer .wrap {
 .listRowDisabled .expandButton:hover,
 .listRowDisabled.rowSelected {
   color: #aaa;
-  text-shadow: #fff 0 1px 0;
 }
 .progressBarLabel {
   margin-top: -38px;
@@ -3052,6 +2906,7 @@ footer .wrap {
   width: 100%;
   text-align: center;
   color: #18383f;
+  color: black;
 }
 .footerBar {
   display: flex;
@@ -3162,7 +3017,7 @@ footer .wrap {
 }
 #mainnavContainer .activeMenuItem {
   padding-top: 24px !important;
-  border-bottom: 1px solid #e9a201 !important;
+  border-bottom: 1px solid lightgray !important;
 }
 #mainnavContainer .settingshub {
   text-align: center;
@@ -3196,16 +3051,10 @@ header nav li div.moreButton {
   text-transform: uppercase;
   padding: 24px 11px;
   text-decoration: none;
-  color: #dbf1f6;
+  color: black;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 16px;
-  text-shadow: 0 1px 1px #00181c;
-  -webkit-transition: background-color 0.2s linear;
-  -moz-transition: background-color 0.2s linear;
-  -ms-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
 }
 .moreButton:hover,
 a:active.dropDownButton,
@@ -3226,7 +3075,7 @@ header nav li a.mainNavButton:active,
 header nav li a.mainNavButton:active:active,
 header nav li a.mainNavButton:hover:active,
 header nav li a.mainNavButton:visited:active {
-  box-shadow: #061a1d 0 0 5px inset;
+  box-shadow: black 0 0 5px inset;
 }
 a.dropDownButton.current,
 header nav li a.mainNavButton.current,
@@ -3234,8 +3083,8 @@ header nav li a.mainNavButton:active.current,
 header nav li a.mainNavButton:hover.current,
 header nav li a.mainNavButton:visited.current {
   padding-top: 24px;
-  border-bottom: 2px solid #e9a201 !important;
-  background-color: #193d43;
+  border-bottom: 2px solid lightgray !important;
+  background-color: lightgrey;
 }
 .moreButton {
   width: 48px;
@@ -3254,7 +3103,8 @@ header nav li a.mainNavButton:visited.current {
   z-index: 3;
   border-radius: 0 0 0 5px;
   padding: 0;
-  background: #c6e5e7;
+  background: lightgray;
+  background: white;
 }
 #dropDownMenu .dropDownButton {
   width: 100%;
@@ -3289,10 +3139,10 @@ header nav li a.mainNavButton:visited.current {
   min-height: 100%;
   padding: 86px 1px;
   color: #18383f;
+  color: black;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background: url(../images/content_bg_hover.png) #d6f8f7;
-  text-shadow: #fff 0 1px 0;
+  background-color: white;
   box-shadow: -1px 0 1px #296570 inset, 1px 0 1px #296570 inset;
 }
 #gwtContent h1,
@@ -3304,6 +3154,7 @@ header nav li a.mainNavButton:visited.current {
   font-weight: 700;
   margin: 0 0 13px;
   color: #18383f;
+  color: black;
 }
 #gwtContent h1 img {
   margin-top: -5px;
@@ -3316,9 +3167,10 @@ header nav li a.mainNavButton:visited.current {
   box-shadow: 0 3px 2px -2px gray;
 }
 .listHeadingWrapper {
-  background-image: url(../images/content_bg_hover.png);
+  background-color: white;
+  border-top: solid 10px white;
   margin-left: -2px;
-  margin-top: -16px;
+  margin-top: -26px;
   z-index: 1;
 }
 .fixedHeader {
@@ -3337,8 +3189,8 @@ header nav li a.mainNavButton:visited.current {
   padding: 8px 8px 8px 14px;
 }
 .directConnectionPopup .wrapper {
-  background-image: url(../images/content_bg_hover.png);
-  border: 1px solid #22545c;
+  background-color: white;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 8px 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), 0 0 0 #000 inset;
@@ -3365,7 +3217,7 @@ header nav li a.mainNavButton:visited.current {
 header {
   width: 100%;
   display: block;
-  background-color: #22545c;
+  background-color: white;
   border-top: solid #163c43 1px;
   height: 72px;
 }
@@ -3434,8 +3286,7 @@ div#gwtUnreadCountWrapper {
   font-size: 9px;
   line-height: 9px;
   font-weight: 700;
-  text-shadow: none;
-  color: #fff;
+  color: black;
   text-decoration: none !important;
   background-color: red;
   padding: 1px 3px;
@@ -3451,7 +3302,7 @@ div#gwtUnreadCountWrapper {
   left: 128px;
 }
 .unreadCount:hover {
-  color: #fff;
+  color: black;
   cursor: pointer;
 }
 #loginContainer,
@@ -3562,10 +3413,10 @@ div#gwtUnreadCountWrapper {
   margin: 0 auto;
   padding: 90px 16px;
   color: #18383f;
+  color: black;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background: url(../images/content_bg_hover.png) #d6f8f7;
-  text-shadow: #fff 0 1px 0;
+  background-color: white;
   box-shadow: -1px 0 1px #296570 inset, 1px 0 1px #296570 inset;
 }
 #loginContainer #login {
@@ -3610,17 +3461,16 @@ div#gwtUnreadCountWrapper {
     left top,
     left bottom,
     from(#f3d435),
-    to(#e9a201)
+    to(lightgray)
   );
-  background-image: -webkit-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -moz-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -ms-linear-gradient(top, #f3d435, #e9a201);
-  background-image: -o-linear-gradient(top, #f3d435, #e9a201);
-  background-image: linear-gradient(to bottom, #f3d435, #e9a201);
-  -pie-background: linear-gradient(#f3d435, #e9a201);
+  background-image: -webkit-linear-gradient(top, #f3d435, lightgray);
+  background-image: -moz-linear-gradient(top, #f3d435, lightgray);
+  background-image: -ms-linear-gradient(top, #f3d435, lightgray);
+  background-image: -o-linear-gradient(top, #f3d435, lightgray);
+  background-image: linear-gradient(to bottom, #f3d435, lightgray);
+  -pie-background: linear-gradient(#f3d435, lightgray);
   border: 1px solid #cd8000;
   border-top-color: #e99c00;
-  text-shadow: 0 1px 1px #c97a00;
   box-shadow: 0 0 2px #fff inset;
   cursor: pointer;
   -webkit-transition: all 0.1s linear;
@@ -3639,11 +3489,11 @@ div#gwtUnreadCountWrapper {
 #loginContainer #login .loginbutton:active,
 #loginContainer #login .loginbutton:hover,
 #loginContainer #login .loginbutton:visited {
-  color: #fff;
+  color: black;
 }
 #loginContainer #login .loginbutton:hover {
-  border-color: #e89b00 #b16400 #b16400;
-  background-color: #f6c316;
+  border-color: #bebebe;
+  background-color: lightgrey;
   background-image: -webkit-gradient(
     linear,
     left top,

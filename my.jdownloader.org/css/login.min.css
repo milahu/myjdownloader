@@ -2740,7 +2740,7 @@ header nav li a.mainNavButton:visited.current {
   color: #18383f;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background: url(../images/content_bg_hover.png) #d6f8f7;
+  background-color:white;
   text-shadow: #fff 0 1px 0;
   box-shadow: -1px 0 1px #296570 inset, 1px 0 1px #296570 inset;
 }
@@ -3013,7 +3013,7 @@ div#gwtUnreadCountWrapper {
   color: #18383f;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background: url(../images/content_bg_hover.png) #d6f8f7;
+  background-color:white;
   text-shadow: #fff 0 1px 0;
   box-shadow: -1px 0 1px #296570 inset, 1px 0 1px #296570 inset;
 }

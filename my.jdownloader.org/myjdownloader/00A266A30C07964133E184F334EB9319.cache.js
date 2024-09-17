@@ -29586,7 +29586,7 @@ function Yld() {
   var a;
   var b;
   jei[a = ++kei] = Yld;
-  b = yT((lei[a] = lIi + sfi, AT())) ? ".GHS0TFHLI{background:white;background-image:url(./images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;left:20px;cursor:pointer;z-index:32767;}" : ".GHS0TFHLI{background:white;background-image:url(./images/content_bg_hover.png);box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;right:20px;cursor:pointer;z-index:32767;}";
+  b = yT((lei[a] = lIi + sfi, AT())) ? ".GHS0TFHLI{background:white;background-color:white;box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;left:20px;cursor:pointer;z-index:32767;}" : ".GHS0TFHLI{background:white;background-color:white;box-shadow:0 0 6px rgba(0, 0, 0, 0.3);border-radius:4px;padding:30px;margin:26px;}.GHS0TFHKI{position:absolute;top:20px;right:20px;cursor:pointer;z-index:32767;}";
   kei = a - 1;
   return b;
 }

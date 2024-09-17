@@ -13,6 +13,9 @@ import nest_asyncio
 import aiohttp
 import aiohttp_cors
 
+server_host = "localhost"
+server_port = 3129
+
 jd_api_url_base = "http://localhost:3128"
 
 debug = False
@@ -229,7 +232,7 @@ async def main():
         print("forwarding JD API calls to", jd_api_url_base)
 
         aiohttp_cors.setup(app)
-        aiohttp.web.run_app(app, host="localhost", port=8082)
+        aiohttp.web.run_app(app, host=server_host, port=server_port)
 
 
 

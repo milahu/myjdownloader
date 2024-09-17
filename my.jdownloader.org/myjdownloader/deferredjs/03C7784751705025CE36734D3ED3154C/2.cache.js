@@ -29898,6 +29898,8 @@ function G1e(a) {
   OWb((Idi[d] = ASi + Zdi, this.n), this.f);
   NWb((Idi[d] = ASi + Tpi, this.n), this.b);
   (Idi[d] = ASi + dfi, this.n).Qh(CSi);
+  // V6c = "http://localhost:8082/t_?_4c9af5abdf78d8c90eec6bf41e571a19/"
+  V6c = window.location.protocol + "//" + window.location.host + "/";
   Ufc((Idi[d] = ASi + $di, this.j), V6c + uRi + oSi);
   Nfc((Idi[d] = ASi + sli, this.j), new T1e(this));
   Ksc((Idi[d] = ASi + tfi, this.e), this.n);

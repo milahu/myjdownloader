@@ -25,16 +25,6 @@ from [my.jdownloader.org](https://my.jdownloader.org/)
 
 
 
-## todo
-
-- make it connect to [localhost:3128](http://localhost:3128/)
-- remove garbage files
-- maybe fix URLs, use relative links, remove all absolute links to make it work on github-pages
-- maybe fix javascript errors
-- maybe add missing files
-
-
-
 ## why
 
 remove dependency on the centralized tunneling service

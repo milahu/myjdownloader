@@ -44,28 +44,10 @@ async def handle_request(request):
 
 async def call_jd_api(request):
 
-    # TODO remove "/"?
-    #remote_url = jd_api_url_base + "/" + request.rel_url.path_qs
     remote_url = jd_api_url_base + request.rel_url.path_qs
-    #print("remote_url", remote_url)
+    if debug:
+        print("remote_url", remote_url)
     client_session = request.app["client_session"]
-    # FIXME this hangs...
-    #async with client_session.request(request.method, remote_url) as response:
-    """
-    # FIXME request.body
-    print("request dir", dir(request))
-    print("request.has_body", request.has_body)
-    print("request.body_exists", request.body_exists)
-    print("request.can_read_body", request.can_read_body)
-    print("request.charset", request.charset)
-    print("request.read", await request.read())
-    print("request.content.read()", await request.content.read())
-    print("request.multipart()", await request.multipart())
-    print("request.post", await request.post())
-    print("request.text", await request.text())
-    print("request.content_length", request.content_length)
-    print("request.content_type", request.content_type)
-    """
     headers = dict(request.headers)
     remove_headers = [
         "Host",
@@ -88,17 +70,12 @@ async def call_jd_api(request):
         data=body,
     )
     async with aiohttp.client.request(**args) as response:
-        #print("response", response)
-        #text = await response.text() # str
-        #print("reading body ...")
         body = await response.read() # bytes
-        #print("reading body done:", body[:1000])
+        #print("response body:", body[:1000])
         headers = dict(response.headers)
-        # Content-Encoding: deflate
-        # Transfer-Encoding: chunked
         remove_headers = [
-            "Content-Encoding",
-            "Transfer-Encoding",
+            "Content-Encoding", # "deflate"
+            "Transfer-Encoding", # "chunked"
         ]
         for key in remove_headers:
             try:
@@ -182,7 +159,14 @@ async def get_jd_api_routes():
     del BeautifulSoup
     """
     seen = set()
-    path = "/help"; seen.add(path); yield path
+    extra_routes = [
+        "/help",
+    ]
+    for path in extra_routes:
+        if path in seen:
+            continue
+        seen.add(path)
+        yield path
     # html is simple enough to parse it with regex
     for match in re.finditer(r"<span class='value'>(/[0-9a-zA-Z/]+)(?:\?[0-9a-zA-Z:&]+)?</span>", html):
         path = match.group(1)
@@ -204,23 +188,7 @@ async def main():
 
     # add default route handler
     # https://stackoverflow.com/questions/34565705
-    #app.router.add_get("/{tail:.*}", handle_file_request)
-    #app.router.add_get("/{tail:.*}", handle_request)
     app.router.add_route("*", "/{tail:.*}", handle_request)
-
-    # not working... the default route handler is always used
-    """
-    async for path in get_jd_api_routes():
-        #print("adding jd route", path)
-        app.router.add_route("*", path, call_jd_api)
-    """
-
-    """
-    #resolver = aiohttp.TCPConnector()
-    #proxy_pool = aiohttp.ProxyConnector(resolver)
-    proxy_pool = aiohttp.TCPConnector()
-    app["proxy_pool"] = proxy_pool
-    """
 
     app["jd_routes"] = set()
     async for path in get_jd_api_routes():

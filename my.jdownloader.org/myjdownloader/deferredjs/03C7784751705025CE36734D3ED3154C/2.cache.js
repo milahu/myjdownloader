@@ -31272,6 +31272,8 @@ function s6e(a) {
   this;
   Idi[c] = OSi + Sfi;
   a;
+  // bypass tunneling service
+  V6c = window.location.protocol + "//" + window.location.host + "/";
   hz((Idi[c] = OSi + Vgi, this.b), V6c + uRi + "?add&20");
   hz((Idi[c] = OSi + Ohi, this.d), V6c + uRi + "?popUpSmall&6");
   Idi[c] = OSi + Tfi;

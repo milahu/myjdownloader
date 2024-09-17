@@ -30512,7 +30512,7 @@ function dNd(a, b, c) {
         Z7b((Idi[g] = UJi + Nfi, f), WJi + Dv(aQb(new Yfc("/images/logo32.png"))) + XJi + (dMc(Z7c(d)) > 42 ? mMc(Z7c(d), 0, 42) + tli : Z7c(d)) + rvi);
       } else {
         if (d && d.name === undefined) {
-          d.name = "?"; // fix: a == undefined @ dMc(a)
+          d.name = "JDownloader"; // fix: a == undefined @ dMc(a)
         }
         Z7b((Idi[g] = UJi + Lhi, f), WJi + Dv(aQb(new Yfc("/images/logo32bw.png"))) + XJi + (dMc(Z7c(d)) > 42 ? mMc(Z7c(d), 0, 42) + tli : Z7c(d)) + rvi);
         G7b((Idi[g] = UJi + Pfi, f), new dOd(a, d));

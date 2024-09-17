@@ -28242,6 +28242,14 @@ function p8c(e, c, d) {
   var f;
   Gdi[f = ++Hdi] = p8c;
   (Idi[f] = YGi + ofi, e).listDevices(d).done(function (a) {
+    // a: device list from jdapi
+    // fix empty device list
+    a = [{
+        "id": $wnd.jd._deviceId,
+        "type": "jd",
+        "name": $wnd.jd._deviceName,
+        "status": "UNKNOWN"
+    }];
     var b;
     Gdi[b = ++Hdi] = null;
     if ((Idi[b] = YGi + Ldi, $wnd).jd.loggingEnabled) {

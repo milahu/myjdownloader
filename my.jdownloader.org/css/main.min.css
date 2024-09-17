@@ -57,11 +57,11 @@ body {
   margin: 0;
 }
 ::-moz-selection {
-  background: #307782;
+  background: blue;
   color: black;
 }
 ::selection {
-  background: #307782;
+  background: blue;
   color: black;
 }
 a {
@@ -336,17 +336,16 @@ textarea:invalid {
   box-sizing: border-box;
 }
 .bg-bluebox {
-  background-color: white;
+  background-color: lightblue;
 }
 .bg-bluelight {
-  background-color: lightgray;
-  background-color: white;
+  background-color: lightblue;
 }
 .bg-bluemedium {
-  background-color: white;
+  background-color: blue;
 }
 .bg-bluedark {
-  background-color: white;
+  background-color: darkblue;
 }
 h1,
 h2,
@@ -537,9 +536,7 @@ hr {
   position: relative;
 }
 body {
-  background-color: lightgray;
   background-color: white;
-  color: #18383f;
   color: black;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -806,7 +803,6 @@ footer {
 }
 #home #slideOut #download-other > div {
   position: absolute;
-  color: #18383f;
   color: black;
   font-size: 16px;
   text-align: center;
@@ -1301,7 +1297,6 @@ footer {
   padding: 4px;
   margin: 1px;
   border-radius: 3px;
-  color: #18383f;
   color: black;
   background-color: lightgray;
   background-color: white;
@@ -1907,8 +1902,7 @@ input.invalid {
 }
 input[disabled],
 textarea[disabled] {
-  background-color: #ebebe4;
-  outline-color: #18383f;
+  background-color: #ebebeb;
   outline-color: black;
 }
 select[disabled] {
@@ -1926,7 +1920,6 @@ select[disabled] {
   z-index: 3;
 }
 .gwt-PopupPanel * {
-  color: #18383f;
   color: black;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
@@ -2149,7 +2142,7 @@ progress::-webkit-progress-value {
 progress[aria-valuenow]:before {
   background: green;
 }
-#18383F .ui-progressbar-value {
+.ui-progressbar-value {
   background: #eee;
 }
 .progress-label {
@@ -2222,7 +2215,6 @@ progress[aria-valuenow]:before {
 }
 .contextMenu p,
 .selectionHeader p {
-  color: #18383f;
   color: black;
   text-decoration: none;
   font-weight: 600;
@@ -2465,6 +2457,9 @@ html .listRow .expandButton:hover {
 .gwt-TabBarItem-selected {
   font-weight: 700;
   padding-bottom: 2px;
+}
+td.item.item-selected {
+  background-color: lightblue !important;
 }
 nav.navbar.myjd {
   margin-bottom: 0 !important;
@@ -2905,7 +2900,6 @@ footer .wrap {
   top: 9px;
   width: 100%;
   text-align: center;
-  color: #18383f;
   color: black;
 }
 .footerBar {
@@ -3126,7 +3120,7 @@ header nav li a.mainNavButton:visited.current {
   z-index: 3;
   border-radius: 0 0 0 5px;
   padding: 0;
-  background: #18383f;
+  background: lightblue;
 }
 .mainNavMobileCurrent {
   background: #1f434b;
@@ -3138,7 +3132,6 @@ header nav li a.mainNavButton:visited.current {
   margin: 0 auto;
   min-height: 100%;
   padding: 86px 1px;
-  color: #18383f;
   color: black;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
@@ -3153,7 +3146,6 @@ header nav li a.mainNavButton:visited.current {
   letter-spacing: 2px;
   font-weight: 700;
   margin: 0 0 13px;
-  color: #18383f;
   color: black;
 }
 #gwtContent h1 img {
@@ -3412,7 +3404,6 @@ div#gwtUnreadCountWrapper {
 #loginContainer #main {
   margin: 0 auto;
   padding: 90px 16px;
-  color: #18383f;
   color: black;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;

@@ -9,15 +9,14 @@
 import os
 import re
 import asyncio
+import argparse
 import nest_asyncio
 import aiohttp
 import aiohttp_cors
 
-server_host = "localhost"
-server_port = 3129
 
-jd_api_url_base = "http://localhost:3128"
 
+main_args = None
 debug = False
 
 
@@ -44,7 +43,7 @@ async def handle_request(request):
 
 async def call_jd_api(request):
 
-    remote_url = jd_api_url_base + request.rel_url.path_qs
+    remote_url = main_args.jdownloader + request.rel_url.path_qs
     if debug:
         print("remote_url", remote_url)
     client_session = request.app["client_session"]
@@ -145,7 +144,7 @@ async def handle_file_request(request):
 
 async def get_jd_api_routes():
 
-    url = jd_api_url_base + "/help"
+    url = main_args.jdownloader + "/help"
     html = None
     async with aiohttp.ClientSession() as client:
         async with client.get(url) as resp:
@@ -179,10 +178,43 @@ async def get_jd_api_routes():
 
 async def main():
 
+    global main_args
+    global debug
+
     # allow nesting multiple asyncio event loops
     # fix: RuntimeError: This event loop is already running
     # fix: RuntimeError: Cannot run the event loop while another loop is running
     nest_asyncio.apply()
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '-H',
+        '--host',
+        type=str,
+        default="localhost",
+        help='host to listen on (default: localhost)',
+    )
+    parser.add_argument(
+        '-p',
+        '--port',
+        type=int,
+        default=3129,
+        help='port to listen on (default: 3129)',
+    )
+    parser.add_argument(
+        '--jdownloader',
+        type=str,
+        default="http://localhost:3128",
+        help='jdownloader API base URL (default: http://localhost:3128)',
+    )
+    parser.add_argument(
+        '-v',
+        '--verbose',
+        action='store_true',
+        help='show more output',
+    )
+    main_args = parser.parse_args()
+    debug = main_args.verbose
 
     app = aiohttp.web.Application()
 
@@ -197,10 +229,10 @@ async def main():
     async with aiohttp.ClientSession() as client_session:
         app["client_session"] = client_session
 
-        print("forwarding JD API calls to", jd_api_url_base)
+        print("forwarding JD API calls to", main_args.jdownloader)
 
         aiohttp_cors.setup(app)
-        aiohttp.web.run_app(app, host=server_host, port=server_port)
+        aiohttp.web.run_app(app, host=main_args.host, port=main_args.port)
 
 
 

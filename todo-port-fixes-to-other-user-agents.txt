@@ -1,0 +1,9 @@
+many recent changes only apply to this user agent
+locale=en + chrome
+my.jdownloader.org/myjdownloader/03C7784751705025CE36734D3ED3154C.cache.js
+my.jdownloader.org/myjdownloader/deferredjs/03C7784751705025CE36734D3ED3154C/*.cache.js
+
+the main other user agent is
+locale=de + chrome
+my.jdownloader.org/myjdownloader/00A266A30C07964133E184F334EB9319.cache.js
+my.jdownloader.org/myjdownloader/deferredjs/00A266A30C07964133E184F334EB9319/*.cache.js

@@ -6,6 +6,20 @@ selfhosted webinterface for jdownloader
 
 ## status
 
+works for me
+
+
+
+### device id
+
+maybe this fails with other jdownloader instances,
+which require a different device id (`window.jd._deviceId` or `$wnd.jd._deviceId`).
+i got my device id from the original [my.jdownloader.org](https://my.jdownloader.org/) service
+
+
+
+### history
+
 initial version created by [webapps-scraper](https://github.com/milahu/webapps-scraper)
 from [my.jdownloader.org](https://my.jdownloader.org/)
 

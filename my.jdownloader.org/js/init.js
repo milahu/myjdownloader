@@ -10,7 +10,8 @@ if (!Modernizr.touch) {
 require(["jdapi"], function (API) {
     window.jd = window.jd || {};
     // hardcoded device id
-    window.jd._deviceId = "4c9af5abdf78d8c90eec6bf41e571a19";
+    // usually the device id is a 32 char base16 string
+    window.jd._deviceId = "0";
     // dynamic device name
     window.jd._deviceName = window.location.host;
     window._gaq = [];

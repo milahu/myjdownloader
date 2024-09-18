@@ -75,6 +75,15 @@ jdownloader will listen on port 3128
 
 see [localhost:3128/help](http://localhost:3128/help) for the API docs
 
+now with jdownloader running, you can start the webinterface with
+
+```sh
+nix-shell
+./myjdownloader.py
+```
+
+by default, the webinterface is listening on http://localhost:3129/
+
 
 
 ## source

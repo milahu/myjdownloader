@@ -24641,7 +24641,7 @@ function Zac() {
 function Asc(a, b) {
   var c;
   Gdi[c = ++Hdi] = Asc;
-  (Idi[c] = RDi + yki, $wnd).alert("ERROR: Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (" + b + ") does not match the runtime user.agent value (" + a + "). Expect more errors.\n");
+  console.warn("ERROR: Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (" + b + ") does not match the runtime user.agent value (" + a + "). Expect more errors.\n");
   Hdi = c - 1;
 }
 function ko(a, b, c) {

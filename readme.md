@@ -38,6 +38,10 @@ is just a tunneling service,
 needed for port-forwarding through closed firewalls,
 to expose a listening port to the internet
 
+the tunneling service also serves as a [cors proxy](https://github.com/topics/cors-proxy),
+otherwise the webapp could not connect to jdownloader at http://localhost:3128/,
+so even with the "direct connection" mode, the connection is still routed through my.jdownloader.org
+
 
 
 ### no need for tunneling service

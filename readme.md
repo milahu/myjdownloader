@@ -109,6 +109,15 @@ so im creating consorship-resistant mirrors in advance
 
 
 
+### archives
+
+- https://web.archive.org/web/*/https://github.com/milahu/myjdownloader
+  - https://web.archive.org/web/20240918070605/https://github.com/milahu/myjdownloader
+- https://archive.is/https://github.com/milahu/myjdownloader
+  - https://archive.is/r8d9Y
+
+
+
 ## keywords
 
 - jdownloader
